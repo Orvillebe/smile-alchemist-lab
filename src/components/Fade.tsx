@@ -64,7 +64,7 @@ export function Label({
 
   return (
     <span
-      className={`font-mono text-[10.5px] tracking-[0.08em] uppercase block ${colorClass} ${className}`}
+      className={`font-mono text-[12px] tracking-[0.08em] uppercase block ${colorClass} ${className}`}
     >
       {children}
     </span>

@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Fade, Label } from "./Fade";
 import fairvacuumImg from "@/assets/fairvacuum.jpg";
+import itrackImg from "@/assets/itrack.png";
+import icall2Img from "@/assets/icall2.jpg";
 
 const INDIGO_WHY =
   "Manufacturing in the EU. Value in knowing how to make things. Repairing instead of replacing. Products that last.";
@@ -55,8 +57,7 @@ const PROJECTS: Project[] = [
   {
     tab: "iTrack",
     client: "IndigoCare",
-    image:
-      "https://www.orville.be/web/image/1152-3fafe7f0/iTrack_polsband.png",
+    image: itrackImg,
     name: "iTrack bracelet",
     description:
       "Wireless nurse call bracelet combining three different wireless technologies into one reliable, waterproof, comfortable housing. Designed for daily wear in care environments.",
@@ -67,7 +68,7 @@ const PROJECTS: Project[] = [
   {
     tab: "iCall 2",
     client: "IndigoCare",
-    image: null,
+    image: icall2Img,
     imagePlaceholder: "iC2",
     name: "iCall 2",
     description:
@@ -105,37 +106,33 @@ export default function Cases() {
 
         {/* Tab strip */}
         <Fade delay={0.1}>
-          <div className="flex gap-5 md:gap-8 border-b border-border mb-0 overflow-x-auto">
+          <div className="flex gap-3 md:gap-4 mb-0 overflow-x-auto pb-1">
             {PROJECTS.map((proj, i) => (
               <button
                 key={proj.tab}
                 onClick={() => setActive(i)}
-                className={`group relative pb-4 pt-4 text-left transition-all duration-250 ${
-                  active === i ? "" : "opacity-70 hover:opacity-100"
+                className={`relative px-4 py-3 rounded-md text-left transition-all duration-250 flex-shrink-0 ${
+                  active === i
+                    ? "bg-orville-charcoal"
+                    : "bg-transparent hover:bg-muted"
                 }`}
               >
                 <span
-                  className={`font-mono text-[9.5px] tracking-[0.06em] uppercase block mb-0.5 transition-colors duration-250 ${
+                  className={`font-mono text-[10px] tracking-[0.06em] uppercase block mb-0.5 transition-colors duration-250 ${
                     active === i ? "text-orville-green" : "text-orville-mid"
                   }`}
                 >
                   {proj.client}
                 </span>
                 <span
-                  className={`font-heading text-[15px] transition-all duration-250 ${
+                  className={`font-heading text-[14px] transition-all duration-250 ${
                     active === i
-                      ? "font-semibold text-foreground"
+                      ? "font-semibold text-orville-offwhite"
                       : "font-normal text-orville-mid"
                   }`}
                 >
                   {proj.tab}
                 </span>
-                {/* Active indicator */}
-                <span
-                  className={`absolute bottom-0 left-0 right-0 h-0.5 transition-colors duration-250 ${
-                    active === i ? "bg-orville-green" : "bg-transparent"
-                  }`}
-                />
               </button>
             ))}
           </div>

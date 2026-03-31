@@ -54,7 +54,7 @@ export default function Studio() {
                   Vincent Ramaekers
                 </h3>
                 <Label variant="green" className="mb-3">
-                  Mechanical engineer
+                  Mechanical engineer bringing a decade of experience
                 </Label>
                 <p className="font-body text-[15px] leading-[1.7] text-orville-mid mb-2">
                   A decade of product design, 3D modelling, FEA analysis,

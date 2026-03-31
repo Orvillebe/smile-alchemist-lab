@@ -3,7 +3,7 @@ import { Fade, Label } from "./Fade";
 import orvilleLogo from "@/assets/orville-logo.png";
 
 const NAV_ITEMS: [string, string][] = [
-  ["Studio", "studio"],
+  ["Who", "studio"],
   ["Our work", "cases"],
   ["Contact", "contact"],
 ];
