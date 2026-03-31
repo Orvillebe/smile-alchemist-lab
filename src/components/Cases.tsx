@@ -106,15 +106,15 @@ export default function Cases() {
 
         {/* Tab strip */}
         <Fade delay={0.1}>
-          <div className="flex gap-3 md:gap-4 mb-0 overflow-x-auto pb-1">
+          <div className="border border-border rounded-lg bg-background/60 p-1.5 mb-0 overflow-x-auto flex gap-1">
             {PROJECTS.map((proj, i) => (
               <button
                 key={proj.tab}
                 onClick={() => setActive(i)}
-                className={`relative px-4 py-3 rounded-md text-left transition-all duration-250 flex-shrink-0 ${
+                className={`relative px-4 py-2.5 rounded-md text-left transition-all duration-250 flex-shrink-0 ${
                   active === i
-                    ? "bg-orville-charcoal"
-                    : "bg-transparent hover:bg-muted"
+                    ? "bg-orville-charcoal shadow-sm"
+                    : "bg-transparent hover:bg-muted/80"
                 }`}
               >
                 <span
