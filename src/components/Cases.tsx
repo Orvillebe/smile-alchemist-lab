@@ -57,8 +57,7 @@ const PROJECTS: Project[] = [
   {
     tab: "iTrack",
     client: "IndigoCare",
-    image:
-      "https://www.orville.be/web/image/1152-3fafe7f0/iTrack_polsband.png",
+    image: itrackImg,
     name: "iTrack bracelet",
     description:
       "Wireless nurse call bracelet combining three different wireless technologies into one reliable, waterproof, comfortable housing. Designed for daily wear in care environments.",
