@@ -106,37 +106,33 @@ export default function Cases() {
 
         {/* Tab strip */}
         <Fade delay={0.1}>
-          <div className="flex gap-5 md:gap-8 border-b border-border mb-0 overflow-x-auto">
+          <div className="flex gap-3 md:gap-4 mb-0 overflow-x-auto pb-1">
             {PROJECTS.map((proj, i) => (
               <button
                 key={proj.tab}
                 onClick={() => setActive(i)}
-                className={`group relative pb-4 pt-4 text-left transition-all duration-250 ${
-                  active === i ? "" : "opacity-70 hover:opacity-100"
+                className={`relative px-4 py-3 rounded-md text-left transition-all duration-250 flex-shrink-0 ${
+                  active === i
+                    ? "bg-orville-charcoal"
+                    : "bg-transparent hover:bg-muted"
                 }`}
               >
                 <span
-                  className={`font-mono text-[9.5px] tracking-[0.06em] uppercase block mb-0.5 transition-colors duration-250 ${
+                  className={`font-mono text-[10px] tracking-[0.06em] uppercase block mb-0.5 transition-colors duration-250 ${
                     active === i ? "text-orville-green" : "text-orville-mid"
                   }`}
                 >
                   {proj.client}
                 </span>
                 <span
-                  className={`font-heading text-[15px] transition-all duration-250 ${
+                  className={`font-heading text-[14px] transition-all duration-250 ${
                     active === i
-                      ? "font-semibold text-foreground"
+                      ? "font-semibold text-orville-offwhite"
                       : "font-normal text-orville-mid"
                   }`}
                 >
                   {proj.tab}
                 </span>
-                {/* Active indicator */}
-                <span
-                  className={`absolute bottom-0 left-0 right-0 h-0.5 transition-colors duration-250 ${
-                    active === i ? "bg-orville-green" : "bg-transparent"
-                  }`}
-                />
               </button>
             ))}
           </div>
