@@ -68,7 +68,7 @@ const PROJECTS: Project[] = [
   {
     tab: "iCall 2",
     client: "IndigoCare",
-    image: null,
+    image: icall2Img,
     imagePlaceholder: "iC2",
     name: "iCall 2",
     description:
