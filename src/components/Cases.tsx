@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Fade, Label } from "./Fade";
 import fairvacuumImg from "@/assets/fairvacuum.jpg";
+import itrackImg from "@/assets/itrack.png";
+import icall2Img from "@/assets/icall2.jpg";
 
 const INDIGO_WHY =
   "Manufacturing in the EU. Value in knowing how to make things. Repairing instead of replacing. Products that last.";
