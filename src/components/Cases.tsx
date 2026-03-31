@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Fade, Label } from "./Fade";
+import fairvacuumImg from "@/assets/fairvacuum.jpg";
 
 const INDIGO_WHY =
   "Manufacturing in the EU. Value in knowing how to make things. Repairing instead of replacing. Products that last.";
@@ -19,8 +20,7 @@ const PROJECTS: Project[] = [
   {
     tab: "FairVacuum",
     client: "Own venture",
-    image: null,
-    imagePlaceholder: "FV",
+    image: fairvacuumImg,
     name: "FairVacuum",
     description:
       "Circular vacuum cleaner — modular housing built around reused components.",
@@ -96,101 +96,103 @@ export default function Cases() {
   return (
     <section
       id="cases"
-      className="bg-orville-offwhite px-6 md:px-[60px] py-24"
+      className="bg-orville-offwhite px-6 md:px-10 py-24"
     >
-      <Fade>
-        <Label className="mb-8">Our work</Label>
-      </Fade>
+      <div className="max-w-[1200px] mx-auto">
+        <Fade>
+          <Label className="mb-8">Our work</Label>
+        </Fade>
 
-      {/* Tab strip */}
-      <Fade delay={0.1}>
-        <div className="flex gap-5 md:gap-8 border-b border-border mb-0 overflow-x-auto">
-          {PROJECTS.map((proj, i) => (
-            <button
-              key={proj.tab}
-              onClick={() => setActive(i)}
-              className={`group relative pb-4 pt-4 text-left transition-all duration-250 ${
-                active === i ? "" : "opacity-70 hover:opacity-100"
-              }`}
-            >
-              <span
-                className={`font-mono text-[9.5px] tracking-[0.06em] uppercase block mb-0.5 transition-colors duration-250 ${
-                  active === i ? "text-orville-green" : "text-orville-mid"
+        {/* Tab strip */}
+        <Fade delay={0.1}>
+          <div className="flex gap-5 md:gap-8 border-b border-border mb-0 overflow-x-auto">
+            {PROJECTS.map((proj, i) => (
+              <button
+                key={proj.tab}
+                onClick={() => setActive(i)}
+                className={`group relative pb-4 pt-4 text-left transition-all duration-250 ${
+                  active === i ? "" : "opacity-70 hover:opacity-100"
                 }`}
               >
-                {proj.client}
-              </span>
-              <span
-                className={`font-heading text-[15px] transition-all duration-250 ${
-                  active === i
-                    ? "font-semibold text-foreground"
-                    : "font-normal text-orville-mid"
-                }`}
-              >
-                {proj.tab}
-              </span>
-              {/* Active indicator */}
-              <span
-                className={`absolute bottom-0 left-0 right-0 h-0.5 transition-colors duration-250 ${
-                  active === i ? "bg-orville-green" : "bg-transparent"
-                }`}
+                <span
+                  className={`font-mono text-[9.5px] tracking-[0.06em] uppercase block mb-0.5 transition-colors duration-250 ${
+                    active === i ? "text-orville-green" : "text-orville-mid"
+                  }`}
+                >
+                  {proj.client}
+                </span>
+                <span
+                  className={`font-heading text-[15px] transition-all duration-250 ${
+                    active === i
+                      ? "font-semibold text-foreground"
+                      : "font-normal text-orville-mid"
+                  }`}
+                >
+                  {proj.tab}
+                </span>
+                {/* Active indicator */}
+                <span
+                  className={`absolute bottom-0 left-0 right-0 h-0.5 transition-colors duration-250 ${
+                    active === i ? "bg-orville-green" : "bg-transparent"
+                  }`}
+                />
+              </button>
+            ))}
+          </div>
+        </Fade>
+
+        {/* Project detail */}
+        <div
+          key={active}
+          className="grid grid-cols-1 md:grid-cols-[5fr_7fr] gap-12 py-12 animate-fade-in"
+        >
+          {/* Image */}
+          <div>
+            {p.image ? (
+              <img
+                src={p.image}
+                alt={p.name}
+                className="w-full rounded block bg-background"
               />
-            </button>
-          ))}
-        </div>
-      </Fade>
+            ) : (
+              <div className="w-full aspect-[4/3] rounded bg-background border border-border flex flex-col items-center justify-center gap-2">
+                <span className="font-heading text-[32px] font-semibold text-border">
+                  {p.imagePlaceholder}
+                </span>
+                <span className="font-mono text-[10px] text-border uppercase tracking-[0.06em]">
+                  Image coming soon
+                </span>
+              </div>
+            )}
+          </div>
 
-      {/* Project detail */}
-      <div
-        key={active}
-        className="grid grid-cols-1 md:grid-cols-[5fr_7fr] gap-12 py-12 max-w-[1200px] animate-fade-in"
-      >
-        {/* Image */}
-        <div>
-          {p.image ? (
-            <img
-              src={p.image}
-              alt={p.name}
-              className="w-full rounded block bg-background"
-            />
-          ) : (
-            <div className="w-full aspect-[4/3] rounded bg-background border border-border flex flex-col items-center justify-center gap-2">
-              <span className="font-heading text-[32px] font-semibold text-border">
-                {p.imagePlaceholder}
-              </span>
-              <span className="font-mono text-[10px] text-border uppercase tracking-[0.06em]">
-                Image coming soon
-              </span>
-            </div>
-          )}
-        </div>
+          {/* Content */}
+          <div>
+            <Label className="mb-1.5">{p.client}</Label>
+            <h3 className="font-heading text-[26px] font-semibold text-foreground mt-1 mb-4 leading-tight">
+              {p.name}
+            </h3>
+            <p className="font-body text-[15px] leading-[1.7] text-orville-mid mb-7">
+              {p.description}
+            </p>
 
-        {/* Content */}
-        <div>
-          <Label className="mb-1.5">{p.client}</Label>
-          <h3 className="font-heading text-[26px] font-semibold text-foreground mt-1 mb-4 leading-tight">
-            {p.name}
-          </h3>
-          <p className="font-body text-[15px] leading-[1.7] text-orville-mid mb-7">
-            {p.description}
-          </p>
-
-          <div className="flex flex-col gap-5">
-            <div className="border-l-[3px] border-orville-green pl-4">
-              <Label variant="green" className="mb-1.5">
-                Why we said yes
-              </Label>
-              <p className="font-body text-sm leading-[1.65] text-foreground italic">
-                {p.why}
-              </p>
-            </div>
-            <div className="border-l-[3px] border-orville-amber pl-4">
-              <Label variant="amber" className="mb-1.5">
-                The core problem
-              </Label>
-              <p className="font-body text-[15px] leading-[1.6] text-foreground font-medium">
-                {p.problem}
-              </p>
+            <div className="flex flex-col gap-5">
+              <div className="border-l-[3px] border-orville-green pl-4">
+                <Label variant="green" className="mb-1.5">
+                  Why we said yes
+                </Label>
+                <p className="font-body text-sm leading-[1.65] text-foreground italic">
+                  {p.why}
+                </p>
+              </div>
+              <div className="border-l-[3px] border-orville-amber pl-4">
+                <Label variant="amber" className="mb-1.5">
+                  The core problem
+                </Label>
+                <p className="font-body text-[15px] leading-[1.6] text-foreground font-medium">
+                  {p.problem}
+                </p>
+              </div>
             </div>
           </div>
         </div>

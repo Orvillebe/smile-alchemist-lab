@@ -30,26 +30,28 @@ const ITEMS = [
 
 export default function Expect() {
   return (
-    <section className="bg-orville-offwhite px-6 md:px-[60px] py-24">
-      <Fade>
-        <Label className="mb-12">What you can expect from us</Label>
-      </Fade>
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 md:gap-12 max-w-[1200px]">
-        {ITEMS.map((item, i) => (
-          <Fade key={item.n} delay={0.1 + i * 0.08}>
-            <div>
-              <Label variant="green" className="mb-2.5">
-                {item.n}
-              </Label>
-              <h3 className="font-heading text-lg font-medium text-foreground mb-3 leading-snug">
-                {item.title}
-              </h3>
-              <p className="font-body text-[15px] leading-[1.7] text-orville-mid">
-                {item.text}
-              </p>
-            </div>
-          </Fade>
-        ))}
+    <section className="bg-orville-offwhite px-6 md:px-10 py-24">
+      <div className="max-w-[1200px] mx-auto">
+        <Fade>
+          <Label className="mb-12">What you can expect from us</Label>
+        </Fade>
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 md:gap-12">
+          {ITEMS.map((item, i) => (
+            <Fade key={item.n} delay={0.1 + i * 0.08}>
+              <div>
+                <Label variant="green" className="mb-2.5">
+                  {item.n}
+                </Label>
+                <h3 className="font-heading text-lg font-medium text-foreground mb-3 leading-snug">
+                  {item.title}
+                </h3>
+                <p className="font-body text-[15px] leading-[1.7] text-orville-mid">
+                  {item.text}
+                </p>
+              </div>
+            </Fade>
+          ))}
+        </div>
       </div>
     </section>
   );
