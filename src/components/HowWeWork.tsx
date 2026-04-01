@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
 import { Fade, Label } from "./Fade";
 
 const ITEMS = [
@@ -37,6 +39,17 @@ export default function HowWeWork() {
             </Fade>
           ))}
         </div>
+        <Fade delay={0.3}>
+          <div className="mt-14">
+            <Link
+              to="/process"
+              className="inline-flex items-center gap-2 font-heading text-[15px] font-medium text-foreground hover:text-orville-green transition-colors duration-200 group"
+            >
+              Read more about our process and method
+              <ArrowRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" />
+            </Link>
+          </div>
+        </Fade>
       </div>
     </section>
   );
