@@ -2,7 +2,7 @@ import { Fade, Label } from "./Fade";
 
 export default function Intro() {
   return (
-    <section className="bg-orville-offwhite px-6 md:px-10 py-20">
+    <section className="bg-white px-6 md:px-10 py-20">
       <div className="max-w-[1200px] mx-auto">
         <Fade>
           <Label className="mb-6">What you can expect from us</Label>
