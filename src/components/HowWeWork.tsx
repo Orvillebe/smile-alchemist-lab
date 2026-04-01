@@ -11,16 +11,6 @@ const ITEMS = [
     title: "Make, test, learn, repeat",
     text: "We don't design in the abstract. We build something, test it, learn from it, and do it again. Every iteration makes the product sharper and the assumptions fewer. This isn't a phase. It's how every phase works.",
   },
-  {
-    n: "03",
-    title: "Co-pilot",
-    text: "We work alongside you, not at a distance. Where possible, a day per week at your location. You stay involved in every step of our process. Your knowledge grows with the project, so you can make better informed decisions along the way.",
-  },
-  {
-    n: "04",
-    title: "The snowball effect",
-    text: "We always look at least one layer deeper than the obvious answer. You see a bird. Look again: it's a seagull. One more layer: you're near shore. What you see shapes what you think. What you think shapes what you do. Across a whole project, that compounds.",
-  },
 ];
 
 export default function HowWeWork() {
