@@ -1,7 +1,7 @@
 import Hero from "@/components/Hero";
 import Intro from "@/components/Intro";
 import HowWeWork from "@/components/HowWeWork";
-import Expect from "@/components/Expect";
+import Collaboration from "@/components/Collaboration";
 import Studio from "@/components/Studio";
 import Cases from "@/components/Cases";
 import NameSection from "@/components/NameSection";
@@ -13,9 +13,9 @@ const Index = () => {
       <Hero />
       <Intro />
       <HowWeWork />
-      <Expect />
-      <Studio />
       <Cases />
+      <Collaboration />
+      <Studio />
       <NameSection />
       <Contact />
     </div>
