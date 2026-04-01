@@ -104,28 +104,28 @@ export default function Cases() {
           <Label className="mb-8">Our work</Label>
         </Fade>
 
-        {/* Tab strip */}
+        {/* Browser-style tabs */}
         <Fade delay={0.1}>
-          <div className="border border-border rounded-lg bg-background/60 p-1.5 mb-0 overflow-x-auto flex gap-1">
+          <div className="flex overflow-x-auto border-b border-border mb-0">
             {PROJECTS.map((proj, i) => (
               <button
                 key={proj.tab}
                 onClick={() => setActive(i)}
-                className={`relative px-4 py-2.5 rounded-md text-left transition-all duration-250 flex-shrink-0 ${
+                className={`relative px-5 py-3 text-left transition-all duration-200 flex-shrink-0 border-t border-x ${
                   active === i
-                    ? "bg-orville-charcoal shadow-sm"
-                    : "bg-transparent hover:bg-muted/80"
+                    ? "bg-orville-charcoal border-border rounded-t-lg -mb-px z-10"
+                    : "bg-transparent border-transparent hover:bg-muted/50 rounded-t-lg"
                 }`}
               >
                 <span
-                  className={`font-mono text-[10px] tracking-[0.06em] uppercase block mb-0.5 transition-colors duration-250 ${
+                  className={`font-mono text-[10px] tracking-[0.06em] uppercase block mb-0.5 transition-colors duration-200 ${
                     active === i ? "text-orville-green" : "text-orville-mid"
                   }`}
                 >
                   {proj.client}
                 </span>
                 <span
-                  className={`font-heading text-[14px] transition-all duration-250 ${
+                  className={`font-heading text-[14px] transition-all duration-200 ${
                     active === i
                       ? "font-semibold text-orville-offwhite"
                       : "font-normal text-orville-mid"
