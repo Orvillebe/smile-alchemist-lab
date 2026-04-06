@@ -86,3 +86,30 @@
   from { opacity: 0; transform: translateY(12px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+@property --sweep-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes circle-sweep {
+  0% {
+    --sweep-angle: 0deg;
+    opacity: 0;
+  }
+  5% {
+    opacity: 0.8;
+  }
+  100% {
+    --sweep-angle: 1080deg;
+    opacity: 1;
+  }
+}
+
+.animate-circle-draw {
+  animation: circle-sweep 2.5s cubic-bezier(0.25, 0.1, 0.25, 1) 0.5s forwards;
+  opacity: 0;
+  -webkit-mask-image: conic-gradient(from 0deg, #000 var(--sweep-angle), transparent var(--sweep-angle));
+  mask-image: conic-gradient(from 0deg, #000 var(--sweep-angle), transparent var(--sweep-angle));
+}
