@@ -164,7 +164,7 @@ export default function ProcessBlock() {
           {/* Left — title + steps */}
           <Fade delay={0.1}>
             <div>
-              <h2 className="font-heading text-[clamp(28px,3.5vw,42px)] font-normal leading-[1.25] text-foreground mb-10 tracking-tight">
+              <h2 className="font-heading text-[clamp(28px,3.5vw,42px)] font-semibold leading-[1.25] text-foreground mb-10 tracking-tight">
                 Three phases, one method. The result determines the next step.
               </h2>
               <div className="flex flex-col">
