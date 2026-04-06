@@ -151,8 +151,17 @@ export default function Cases() {
           key={active}
           className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-12 md:gap-16 animate-fade-in"
         >
-          {/* Left: meta + image */}
+          {/* Left: image + meta */}
           <div>
+            {/* Image */}
+            {p.image && (
+              <img
+                src={p.image}
+                alt={p.name}
+                className="w-full rounded block bg-background mb-8"
+              />
+            )}
+
             <p className="font-mono text-xs text-orville-mid uppercase tracking-[1.5px] mb-2">
               {p.client}
             </p>
@@ -161,7 +170,7 @@ export default function Cases() {
             </h3>
 
             {/* Tags */}
-            <div className="flex flex-wrap gap-2 mb-8">
+            <div className="flex flex-wrap gap-2">
               {p.tags.map((tag) => (
                 <span
                   key={tag}
@@ -171,15 +180,6 @@ export default function Cases() {
                 </span>
               ))}
             </div>
-
-            {/* Image */}
-            {p.image && (
-              <img
-                src={p.image}
-                alt={p.name}
-                className="w-full rounded block bg-background"
-              />
-            )}
           </div>
 
           {/* Right: content sections */}
