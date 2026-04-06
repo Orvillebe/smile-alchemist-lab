@@ -86,15 +86,6 @@ export default function Studio() {
             </div>
           </Fade>
         </div>
-
-        {/* Together */}
-        <Fade delay={0.3}>
-          <p className="font-body text-[17px] leading-[1.7] text-foreground max-w-[600px] mt-14 pt-8 border-t border-border">
-            Together: she sees across subjects to the pattern, he sees through a
-            subject to its core. Nothing gets missed. Something gets decided.
-            Founded in 2019.
-          </p>
-        </Fade>
       </div>
     </section>
   );
