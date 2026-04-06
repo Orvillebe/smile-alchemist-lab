@@ -108,7 +108,12 @@ export default function Cases() {
     >
       <div className="max-w-[1200px] mx-auto">
         <Fade>
-          <Label className="mb-8">Our work</Label>
+          <Label className="mb-4">Our work</Label>
+        </Fade>
+        <Fade delay={0.05}>
+          <h2 className="font-heading text-[22px] md:text-[26px] lg:text-[30px] font-semibold text-foreground leading-[1.35] max-w-[780px] mb-10 tracking-tight">
+            Projects where we said yes for a reason
+          </h2>
         </Fade>
 
         {/* Pill-style tabs */}

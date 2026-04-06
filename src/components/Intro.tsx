@@ -2,10 +2,10 @@ import { Fade, Label } from "./Fade";
 
 export default function Intro() {
   return (
-    <section className="bg-white px-6 md:px-10 py-20">
+    <section className="bg-orville-offwhite px-6 md:px-10 py-20">
       <div className="max-w-[1200px] mx-auto">
         <Fade>
-          <Label className="mb-6">What you can expect from us</Label>
+          <Label className="mb-6">What we do</Label>
         </Fade>
         <Fade delay={0.08}>
           <h2 className="font-heading text-[22px] md:text-[26px] lg:text-[30px] font-semibold text-foreground leading-[1.35] max-w-[780px] mb-4">
