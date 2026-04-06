@@ -138,7 +138,7 @@ export default function ProcessBlock() {
     <section className="bg-background px-6 md:px-10 py-[88px] border-t border-border">
       <div className="max-w-[1200px] mx-auto">
         <Fade>
-          <Label variant="green" className="mb-10">{t.process.label}</Label>
+          <Label className="mb-10">{t.process.label}</Label>
         </Fade>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20">
           <Fade delay={0.1}>
