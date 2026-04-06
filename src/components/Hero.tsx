@@ -101,7 +101,10 @@ export default function Hero() {
             </p>
           </Fade>
         </div>
-      </div>
+          <Fade delay={0.4}>
+            <img src={orvilleCircle} alt="Orville circle logo" className="hidden md:block w-[220px] h-[220px] object-contain opacity-80 mt-8" />
+          </Fade>
+        </div>
 
       {/* Scroll indicator */}
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 md:left-auto md:translate-x-0 md:right-auto animate-breathe" style={{ left: 'calc(max((100% - 1200px) / 2, 24px) + 0px)' }}>
