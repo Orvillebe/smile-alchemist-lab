@@ -13,12 +13,12 @@ const Index = () => {
     <div className="bg-background text-foreground">
       <Hero />
       <Intro />
-      <Expect />
-      <Cases />
+      <NameSection />
       <Collaboration />
+      <Cases />
+      <Expect />
       <HowWeWork />
       <Studio />
-      <NameSection />
       <Contact />
     </div>
   );
