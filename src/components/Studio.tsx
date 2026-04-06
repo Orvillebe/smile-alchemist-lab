@@ -12,7 +12,7 @@ export default function Studio() {
               <Label className="mb-6">The people</Label>
             </Fade>
             <Fade delay={0.05}>
-              <h2 className="font-heading font-semibold text-foreground text-[clamp(26px,3.2vw,38px)] leading-[1.25] mb-3">
+              <h2 className="font-heading font-semibold text-foreground text-[clamp(28px,3.5vw,42px)] leading-[1.25] mb-3 tracking-tight">
                 The people who do the presentation are the people who solve the problem.
               </h2>
             </Fade>

@@ -10,7 +10,7 @@ export default function NameSection() {
               <Label variant="green" className="mb-4">
                 The name
               </Label>
-              <h2 className="font-heading text-4xl md:text-[42px] font-semibold text-foreground leading-none mb-2 tracking-tight">
+              <h2 className="font-heading text-[clamp(28px,3.5vw,42px)] font-semibold text-foreground leading-[1.25] mb-2 tracking-tight">
                 Orville
               </h2>
               <p className="font-body text-sm text-orville-mid">

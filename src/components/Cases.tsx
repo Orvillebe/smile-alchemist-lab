@@ -103,7 +103,7 @@ export default function Cases() {
           <Label className="mb-6">Cases</Label>
         </Fade>
         <Fade delay={0.05}>
-          <h2 className="font-heading text-[clamp(32px,4.5vw,56px)] font-semibold text-foreground leading-[1.2] max-w-[640px] mb-12 tracking-tight">
+          <h2 className="font-heading text-[clamp(28px,3.5vw,42px)] font-semibold text-foreground leading-[1.25] max-w-[720px] mb-12 tracking-tight">
             Projects where we said yes for a reason.
           </h2>
         </Fade>
