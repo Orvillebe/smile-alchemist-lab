@@ -7,11 +7,12 @@ export default function Studio() {
   return (
     <section id="studio" className="bg-background px-6 md:px-10 py-16 md:py-[100px]">
       <div className="max-w-[1200px] mx-auto">
+        <Fade>
+          <Label className="mb-10">{t.studio.label}</Label>
+        </Fade>
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-end mb-12 md:mb-[72px]">
           <div>
-            <Fade>
-              <Label className="mb-6">{t.studio.label}</Label>
-            </Fade>
             <Fade delay={0.05}>
               <h2 className="font-heading font-semibold text-foreground text-[clamp(28px,3.5vw,42px)] leading-[1.25] mb-3 tracking-tight">
                 {t.studio.heading}
