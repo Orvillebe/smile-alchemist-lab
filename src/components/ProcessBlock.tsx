@@ -53,7 +53,10 @@ function CycleVisual() {
         ref={dotRef}
         r="5"
         fill="hsl(var(--orville-green))"
-        className="animate-cycle-dot"
+        style={{
+          offsetPath: "circle(72px at 130px 134px)",
+          offsetRotate: "0deg",
+        }}
       />
 
       <text x="130" y="52" textAnchor="middle" className="font-mono text-[11px] font-medium fill-foreground" letterSpacing="0.08em">MAKE</text>
