@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Fade, Label } from "./Fade";
 import orvilleLogo from "@/assets/orville-logo.png";
+import orvilleCircle from "@/assets/orville-circle.png";
 
 const NAV_ITEMS: [string, string][] = [
   ["Who", "studio"],
@@ -73,7 +74,8 @@ export default function Hero() {
 
       {/* Hero content */}
       <div className="max-w-[1200px] mx-auto w-full px-6 md:px-10">
-        <div className="max-w-[860px]">
+        <div className="flex items-start gap-8 md:gap-12">
+          <div className="max-w-[860px] flex-1">
           <Fade delay={0.15}>
             <Label variant="green" className="mb-7">
               Product Design & Engineering
@@ -97,6 +99,10 @@ export default function Hero() {
               feasibility. We validate the problem before we design the solution.
               Then we stay with it, from concept to production.
             </p>
+          </Fade>
+        </div>
+          <Fade delay={0.4}>
+            <img src={orvilleCircle} alt="Orville circle logo" className="hidden md:block w-[220px] h-[220px] object-contain opacity-80 mt-8" />
           </Fade>
         </div>
       </div>
