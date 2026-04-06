@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Fade, Label } from "./Fade";
 import orvilleLogo from "@/assets/orville-logo.png";
-import orvilleCircle from "@/assets/orville-circle.png";
+import orvilleCircle from "@/assets/orville-circle.jpg";
 
 const NAV_ITEMS: [string, string][] = [
   ["Who", "studio"],
@@ -102,7 +102,7 @@ export default function Hero() {
           </Fade>
         </div>
           <Fade delay={0.4}>
-            <img src={orvilleCircle} alt="Orville circle logo" className="hidden md:block w-[220px] h-[220px] object-contain opacity-80 mt-8" />
+            <img src={orvilleCircle} alt="Orville circle logo" className="hidden md:block w-[300px] h-[300px] object-contain opacity-90 mt-8" />
           </Fade>
         </div>
       </div>
