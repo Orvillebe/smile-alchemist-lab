@@ -1,20 +1,18 @@
 import { Fade, Label } from "./Fade";
-import orvilleLogoLong from "@/assets/orville-logo-long.jpeg";
+import { useLanguage } from "@/i18n/LanguageContext";
 
 export default function Contact() {
+  const { t } = useLanguage();
   return (
     <section id="contact" className="bg-orville-charcoal px-6 md:px-10 py-24">
       <div className="max-w-[1200px] mx-auto">
         <Fade>
-          <Label className="mb-7">Contact</Label>
+          <Label className="mb-7">{t.contact.label}</Label>
           <h2 className="font-heading text-[clamp(28px,3.5vw,42px)] font-semibold text-orville-offwhite mb-[18px] tracking-tight">
-            Let's talk.
+            {t.contact.heading}
           </h2>
           <p className="font-body text-[15px] leading-[1.7] text-orville-mid max-w-[600px] mb-8">
-            For complex product development where circularity, modularity, or
-            technical feasibility are central. Whether you know exactly what you
-            need or have a nagging feeling the problem hasn't been defined yet.
-            That's a conversation worth having.
+            {t.contact.body}
           </p>
           <a
             href="mailto:hello@orville.be"
@@ -24,10 +22,10 @@ export default function Contact() {
           </a>
           <div className="mt-[52px] pt-7 border-t border-white/[0.12] flex justify-between items-center flex-wrap gap-3">
             <span className="font-mono text-[11px] text-white/[0.22]">
-              Orville BV — Kortessem, Belgium
+              {t.contact.footer}
             </span>
             <span className="font-mono text-[11px] text-white/[0.22]">
-              © 2026
+              {t.contact.copyright}
             </span>
           </div>
         </Fade>
