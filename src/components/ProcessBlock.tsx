@@ -2,22 +2,6 @@ import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { Fade, Label } from "./Fade";
 import { useLanguage } from "@/i18n/LanguageContext";
-  {
-    n: "01",
-    title: "Dissect",
-    desc: "Every project starts with the core problem. We strip away assumptions until we know what we really need to solve.",
-  },
-  {
-    n: "02",
-    title: "Design",
-    desc: "Technical, functional, and aesthetic at once. Not sequentially. The solution must check all three, or it doesn't check out.",
-  },
-  {
-    n: "03",
-    title: "Develop",
-    desc: "From prototype to production. We stay with it until the product is manufacturable and scalable.",
-  },
-];
 
 const NUM_STROKES = 20;
 const BASE_RADIUS = 80;
@@ -48,7 +32,7 @@ function makeWobbleCircle(baseRadius: number, wobbleAmt: number, seed: number): 
   return d;
 }
 
-function CycleVisual() {
+function CycleVisual({ labels: cycleLabels }: { labels: [string, string, string] }) {
   const gRef = useRef<SVGGElement>(null);
 
   useEffect(() => {
@@ -105,10 +89,8 @@ function CycleVisual() {
         }, delay);
       });
 
-      // Total draw time + pause, then repeat
       const totalDraw = 200 + NUM_STROKES * STROKE_DELAY + STROKE_DRAW_DURATION;
       timeout = window.setTimeout(() => {
-        // Fade out
         strokes.forEach((p) => {
           p.style.transition = "opacity 0.6s ease-out";
           p.style.opacity = "0";
@@ -124,11 +106,9 @@ function CycleVisual() {
   }, []);
 
   const labelR = BASE_RADIUS + 30;
-  // 120° intervals starting from top: -90°, +30°, +150°
   const angles = [-90, 30, 150];
-  const texts = ["MAKE", "TEST", "LEARN"];
   const anchors: ("middle" | "start" | "end")[] = ["middle", "start", "end"];
-  const labels = texts.map((text, i) => {
+  const labels = cycleLabels.map((text, i) => {
     const a = (angles[i] * Math.PI) / 180;
     return { text, x: labelR * Math.cos(a), y: labelR * Math.sin(a), anchor: anchors[i] };
   });
@@ -153,21 +133,21 @@ function CycleVisual() {
 }
 
 export default function ProcessBlock() {
+  const { t } = useLanguage();
   return (
     <section className="bg-background px-6 md:px-10 py-[88px] border-t border-border">
       <div className="max-w-[1200px] mx-auto">
         <Fade>
-          <Label variant="green" className="mb-12">How we work</Label>
+          <Label variant="green" className="mb-12">{t.process.label}</Label>
         </Fade>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20">
-          {/* Left — title + steps */}
           <Fade delay={0.1}>
             <div>
               <h2 className="font-heading text-[clamp(28px,3.5vw,42px)] font-semibold leading-[1.25] text-foreground mb-10 tracking-tight">
-                Three phases, one method.
+                {t.process.heading}
               </h2>
               <div className="flex flex-col">
-                {STEPS.map((step, i) => (
+                {t.process.steps.map((step, i) => (
                   <div
                     key={step.n}
                     className={`grid grid-cols-[28px_1fr] gap-5 py-5 border-b border-border ${
@@ -191,22 +171,21 @@ export default function ProcessBlock() {
             </div>
           </Fade>
 
-          {/* Right — cycle visual + method text */}
           <Fade delay={0.2}>
             <div className="flex flex-col items-center justify-center gap-9">
-              <CycleVisual />
+              <CycleVisual labels={t.process.cycleLabels} />
               <div className="text-center max-w-[300px]">
                 <p className="font-mono text-[11px] tracking-[0.12em] uppercase text-foreground mb-2.5">
-                  Method
+                  {t.process.methodLabel}
                 </p>
                 <p className="font-body text-sm leading-[1.65] text-orville-mid mb-6">
-                  Within each phase we iteratively make, test what we made, and let the result determine the next step.
+                  {t.process.methodBody}
                 </p>
                 <Link
                   to="/process"
                   className="font-mono text-[13px] text-orville-green tracking-[0.04em] hover:underline"
                 >
-                  More about our process →
+                  {t.process.methodLink}
                 </Link>
               </div>
             </div>
