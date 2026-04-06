@@ -105,7 +105,7 @@ export default function Hero() {
             <img
               src={orvilleCircle}
               alt="Orville circle logo"
-              className="w-full h-full object-contain animate-circle-draw opacity-0"
+              className="w-full h-full object-contain animate-circle-draw"
             />
           </div>
         </div>
