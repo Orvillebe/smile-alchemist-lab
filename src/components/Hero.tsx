@@ -36,10 +36,10 @@ export default function Hero() {
       <header
         className="fixed top-0 left-0 right-0 z-50 px-6 md:px-10 py-4 transition-all duration-400"
         style={{
-          background: scrolled ? "rgba(245,244,240,0.92)" : "transparent",
+          background: scrolled ? "rgba(38,38,42,0.92)" : "transparent",
           backdropFilter: scrolled ? "blur(12px)" : "none",
           borderBottom: scrolled
-            ? "1px solid hsl(var(--border))"
+            ? "1px solid rgba(245,244,240,0.1)"
             : "1px solid transparent",
         }}
       >
@@ -50,9 +50,7 @@ export default function Hero() {
           >
             <img src={orvilleLogo} alt="Orville" className="h-8 w-8 rounded" />
             <span
-              className={`font-heading text-lg font-semibold tracking-tight transition-colors duration-400 ${
-                scrolled ? "text-foreground" : "text-orville-offwhite"
-              }`}
+              className="font-heading text-lg font-semibold tracking-tight text-orville-offwhite"
             >
               Orville
             </span>
@@ -62,11 +60,7 @@ export default function Hero() {
               <button
                 key={id}
                 onClick={() => go(id)}
-                className={`font-mono text-xs tracking-[0.05em] transition-colors duration-300 ${
-                  scrolled
-                    ? "text-orville-mid hover:text-foreground"
-                    : "text-white/50 hover:text-orville-offwhite"
-                }`}
+                className="font-mono text-xs tracking-[0.05em] transition-colors duration-300 text-white/50 hover:text-orville-offwhite"
               >
                 {label}
               </button>
