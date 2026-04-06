@@ -24,7 +24,7 @@ const PROJECTS: Project[] = [
     client: "FairVacuum",
     image: fairvacuumImg,
     name: "Model 1",
-    tags: ["circular", "modular"],
+    tags: ["circular", "modular", "e-waste", "universal"],
     problem:
       "Vacuum cleaners die as a unit when one component fails. The real waste isn't the broken part, it's the perfectly functional parts that get thrown away with it.",
     what: "Designed a modular vacuum housing that allows individual components to be replaced independently. Developed the snap-fit system, material selection for recycled plastics, and full production-ready CAD. From problem definition through prototyping to manufacture-ready.",
@@ -48,10 +48,10 @@ const PROJECTS: Project[] = [
     image:
       "https://www.orville.be/web/image/1149-fcfa87fe/pure-d-header-muse-min.png",
     name: "PURE-D",
-    tags: ["consumer product", "injection moulding"],
+    tags: ["startup", "thermoset compression", "consumer product"],
     problem:
       "How do you build reliable ventilation into a toilet seat people use daily, without electrical connection, at a consumer price point?",
-    what: "Full product development from concept through prototyping to production-ready design. Mechanical engineering, airflow simulation, material selection, and DFM for injection moulding.",
+    what: "Full product development from concept through prototyping to production-ready design. Mechanical engineering, airflow simulation, material selection, and DFM for thermoset compression moulding.",
     why: "Dennis is honest and fair. He believes in building things locally, with people worth trusting. Making money, but not by stealing it from others.",
   },
   {
@@ -59,10 +59,10 @@ const PROJECTS: Project[] = [
     client: "IndigoCare",
     image: itrackImg,
     name: "iTrack bracelet",
-    tags: ["healthcare", "wearable", "waterproof"],
+    tags: ["healthcare", "wearable", "waterproof", "tool-free battery swap"],
     problem:
-      "Three wireless technologies need to coexist in one housing small enough to wear on a wrist, robust enough for daily use in healthcare, and waterproof. How do you fit all that without compromising any of it?",
-    what: "Designed a compact housing integrating three wireless technologies. Full mechanical design, waterproofing strategy, comfort testing, and production-ready CAD.",
+      "Three wireless technologies need to coexist in one housing small enough to wear on a wrist, robust enough for daily use in healthcare, and waterproof. On top of that, the battery must be replaceable without tools or adhesives — and the housing must remain watertight after every swap.",
+    what: "Designed a compact housing integrating three wireless technologies. Engineered a tool-free battery replacement mechanism that maintains the waterproof seal. Full mechanical design, waterproofing strategy, comfort testing, and production-ready CAD.",
     why: INDIGO_WHY,
   },
   {
@@ -70,10 +70,10 @@ const PROJECTS: Project[] = [
     client: "IndigoCare",
     image: icall2Img,
     name: "iCall 2",
-    tags: ["healthcare", "product range", "field service"],
+    tags: ["healthcare", "modularity", "open-ended design", "upgradability"],
     problem:
-      "Healthcare equipment gets replaced, not repaired. How do you redesign an entire product range so field support can fix it on-site, with fewer parts, fewer materials, and housings shared across models?",
-    what: "Redesigned the entire product range for field serviceability. Shared housings across models, reduced part count, designed for on-site repair by support staff.",
+      "Healthcare equipment gets replaced, not repaired. How do you redesign an entire product range so field support can fix it on-site, with fewer parts, fewer materials, and housings shared across models — while keeping the platform open for future upgrades?",
+    what: "Redesigned the entire product range around modularity and upgradability. Shared housings across models, reduced part count, designed for on-site repair by support staff, and built in an open-ended architecture that accommodates future modules without redesign.",
     why: INDIGO_WHY,
   },
   {
@@ -81,10 +81,10 @@ const PROJECTS: Project[] = [
     client: "Orville",
     image: "https://www.orville.be/web/image/1150-13a13916/Foote.gif",
     name: "Foote",
-    tags: ["own product", "bamboo", "portable"],
+    tags: ["own product", "ergonomic", "bamboo", "portable"],
     problem:
-      "A portable monitor needs a stand. Every stand is a separate piece you forget, lose, or fumble with. Can the stand simply be part of the monitor?",
-    what: "Full product development and go-to-market. From first sketch to shipping label. Mechanical design, material selection (bamboo), hinge engineering, packaging, and production coordination.",
+      "A portable monitor needs a stand. Every stand is a separate piece you forget, lose, or fumble with. Can the stand simply be part of the monitor — and be ergonomic enough for daily use?",
+    what: "Full product development and go-to-market. From first sketch to shipping label. Mechanical design, ergonomic positioning, material selection (bamboo), hinge engineering, packaging, and production coordination.",
     why: "We wanted to prove we could take a product from concept to market. Not advise — do. From the first sketch to the shipping label.",
   },
 ];
