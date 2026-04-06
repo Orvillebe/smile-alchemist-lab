@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Fade, Label } from "./Fade";
 import orvilleLogo from "@/assets/orville-logo.png";
+import orvilleCircle from "@/assets/orville-circle.png";
 
 const NAV_ITEMS: [string, string][] = [
   ["Who", "studio"],
