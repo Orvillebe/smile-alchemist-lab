@@ -1,24 +1,31 @@
 
 
-## Rebalance the Studio / People section layout
+## Restructure Studio/People section to match v4 layout
 
-### Problem
-The current 2-column grid for the photo + "Together" text creates a large empty gap in the left column because `items-end` pushes the short paragraph to the bottom of the tall photo. The section feels visually unbalanced.
+### New layout structure
 
-### Proposed layout restructure
+The uploaded HTML shows a different composition than what we currently have:
 
-**Top area** — keep as-is: label, heading, subtitle stacked vertically.
+1. **Top area**: 2-column grid (`1fr 1fr`, `align-items: end`, gap 64px, mb 72px)
+   - Left: heading + subtitle (intro text in mono, not body font)
+   - Right: team photo with `aspect-ratio: 3/2`
+2. **Bios grid**: 2-column grid (`1fr 1fr`, gap 64px) — each person has border-top, name, role in **green** uppercase mono, bio, and "when stuck" line with lower opacity
+3. **"Together" paragraph**: appears *below* the bios grid (not beside the photo), styled as Outfit/heading font at 20px weight-500, with "Founded in 2019." in muted smaller text
 
-**Photo + intro area** — switch to a layout where the photo spans wider (roughly 7/12) on the left, and the "Together" text sits on the right, vertically centered beside it. This eliminates the dead space.
+### Technical changes — `src/components/Studio.tsx`
 
-**Bios grid** — keep the 2-column grid for An and Vincent, but align items to `start` instead of relying on equal-height columns.
+1. **Restructure top grid**: Change from `grid-cols-[7fr_5fr] items-center` to `grid-cols-1 md:grid-cols-2 gap-16 items-end mb-[72px]`
+   - Left column: eyebrow label + heading + subtitle (change subtitle to `font-mono text-sm text-orville-mid`)
+   - Right column: photo with `aspect-ratio-[3/2]` and `object-cover`
 
-### Technical changes
+2. **Bios grid**: Change gap from `gap-12` to `gap-16`, keep `grid-cols-2`
+   - Make role text green (`text-orville-green`) instead of muted
+   - Add `mb-5` spacing after role
+   - "When stuck" line: add `opacity-60` instead of italic styling
 
-**File: `src/components/Studio.tsx`**
+3. **Move "Together" text below bios**: Add as a new block after the bios grid with `mt-[72px]`, styled with `font-heading font-medium text-xl leading-[1.5] max-w-[640px]`, and "Founded in 2019." wrapped in a `<span>` with muted color and smaller size
 
-1. Change the photo+text grid from `grid-cols-2 items-end` to `grid-cols-[7fr_5fr] items-center`
-2. Swap column order back: photo first (left), "Together" text second (right) — this puts the visual weight on the left and the text on the right, creating a more natural reading flow
-3. Reduce the `mb-14` gap between the photo row and the bios to `mb-10` for tighter cohesion
-4. Keep everything else (typography, fade delays, bios content) unchanged
+4. **Remove** the current "Together" text from the top grid area
+
+5. **Responsive**: On mobile, both grids collapse to single column with reduced gaps
 
