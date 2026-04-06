@@ -10,7 +10,7 @@ export default function Contact() {
           <h2 className="font-heading text-3xl md:text-[38px] font-normal text-orville-offwhite mb-[18px] tracking-tight">
             Let's talk.
           </h2>
-          <p className="font-body text-[15.5px] leading-[1.7] text-orville-mid max-w-[500px] mb-8">
+          <p className="font-body text-[15px] leading-[1.7] text-orville-mid max-w-[500px] mb-8">
             For complex product development where circularity, modularity, or
             technical feasibility are central. Whether you know exactly what you
             need or have a nagging feeling the problem hasn't been defined yet.

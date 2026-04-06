@@ -96,13 +96,11 @@ export default function Cases() {
   return (
     <section
       id="cases"
-      className="bg-orville-offwhite px-6 md:px-12 py-24 md:py-[100px]"
+      className="bg-orville-offwhite px-6 md:px-10 py-24 md:py-[100px]"
     >
       <div className="max-w-[1200px] mx-auto">
         <Fade>
-          <p className="font-mono text-xs text-orville-mid uppercase tracking-[2px] mb-6">
-            Cases
-          </p>
+          <Label className="mb-6">Cases</Label>
         </Fade>
         <Fade delay={0.05}>
           <h2 className="font-heading text-[clamp(32px,4.5vw,56px)] font-semibold text-foreground leading-[1.2] max-w-[640px] mb-12 tracking-tight">
