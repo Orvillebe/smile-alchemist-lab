@@ -51,81 +51,103 @@ function makeWobbleCircle(baseRadius: number, wobbleAmt: number, seed: number): 
 
 function CycleVisual() {
   const gRef = useRef<SVGGElement>(null);
-  const dotRef = useRef<SVGCircleElement>(null);
 
   useEffect(() => {
     const g = gRef.current;
     if (!g) return;
-    g.innerHTML = "";
 
-    const strokes: SVGPathElement[] = [];
-    for (let i = 0; i < NUM_STROKES; i++) {
-      const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
-      const radiusOffset = (i - NUM_STROKES / 2) * 1.4 + Math.sin(i * 1.3) * 2;
-      const rotation = (i - NUM_STROKES / 2) * 1.4 + Math.sin(i * 0.9) * 1.5;
-      const seed = i * 2.3;
-      const d = makeWobbleCircle(BASE_RADIUS + radiusOffset, WOBBLE + (i % 5) * 1, seed);
-      path.setAttribute("d", d);
-      path.setAttribute("transform", `rotate(${rotation})`);
-      path.setAttribute("fill", "none");
-      path.setAttribute("stroke", "hsl(var(--foreground))");
-      path.setAttribute("stroke-width", "1.5");
-      path.setAttribute("stroke-linecap", "round");
-      path.setAttribute("stroke-linejoin", "round");
-      path.style.opacity = "0";
-      const opacity = 0.15 + (i / NUM_STROKES) * 0.45;
-      path.dataset.targetOpacity = String(opacity);
-      g.appendChild(path);
-      strokes.push(path);
+    function buildStrokes() {
+      g.innerHTML = "";
+      const strokes: SVGPathElement[] = [];
+      for (let i = 0; i < NUM_STROKES; i++) {
+        const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+        const radiusOffset = (i - NUM_STROKES / 2) * 1.4 + Math.sin(i * 1.3) * 2;
+        const rotation = (i - NUM_STROKES / 2) * 1.4 + Math.sin(i * 0.9) * 1.5;
+        const seed = i * 2.3;
+        const d = makeWobbleCircle(BASE_RADIUS + radiusOffset, WOBBLE + (i % 5) * 1, seed);
+        path.setAttribute("d", d);
+        path.setAttribute("transform", `rotate(${rotation})`);
+        path.setAttribute("fill", "none");
+        path.setAttribute("stroke", "hsl(var(--foreground))");
+        path.setAttribute("stroke-width", "1.5");
+        path.setAttribute("stroke-linecap", "round");
+        path.setAttribute("stroke-linejoin", "round");
+        path.style.opacity = "0";
+        const opacity = 0.15 + (i / NUM_STROKES) * 0.45;
+        path.dataset.targetOpacity = String(opacity);
+        g.appendChild(path);
+        strokes.push(path);
+      }
+      return strokes;
     }
 
-    strokes.forEach((path) => {
-      const len = path.getTotalLength();
-      path.style.strokeDasharray = String(len);
-      path.style.strokeDashoffset = String(len);
-    });
+    function animateRound() {
+      const strokes = buildStrokes();
 
-    strokes.forEach((path, i) => {
-      const len = path.getTotalLength();
-      const delay = i * STROKE_DELAY + 200;
-      setTimeout(() => {
-        path.style.opacity = path.dataset.targetOpacity || "1";
-        const start = performance.now();
-        function tick(now: number) {
-          const t = Math.min((now - start) / STROKE_DRAW_DURATION, 1);
-          const ease = t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
-          path.style.strokeDashoffset = String(len * (1 - ease));
-          if (t < 1) requestAnimationFrame(tick);
-        }
-        requestAnimationFrame(tick);
-      }, delay);
-    });
+      strokes.forEach((path) => {
+        const len = path.getTotalLength();
+        path.style.strokeDasharray = String(len);
+        path.style.strokeDashoffset = String(len);
+      });
+
+      strokes.forEach((path, i) => {
+        const len = path.getTotalLength();
+        const delay = i * STROKE_DELAY + 200;
+        setTimeout(() => {
+          path.style.opacity = path.dataset.targetOpacity || "1";
+          const start = performance.now();
+          function tick(now: number) {
+            const t = Math.min((now - start) / STROKE_DRAW_DURATION, 1);
+            const ease = t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+            path.style.strokeDashoffset = String(len * (1 - ease));
+            if (t < 1) requestAnimationFrame(tick);
+          }
+          requestAnimationFrame(tick);
+        }, delay);
+      });
+
+      // Total draw time + pause, then repeat
+      const totalDraw = 200 + NUM_STROKES * STROKE_DELAY + STROKE_DRAW_DURATION;
+      timeout = window.setTimeout(() => {
+        // Fade out
+        strokes.forEach((p) => {
+          p.style.transition = "opacity 0.6s ease-out";
+          p.style.opacity = "0";
+        });
+        timeout = window.setTimeout(animateRound, 800);
+      }, totalDraw + 1500);
+    }
+
+    let timeout: number;
+    animateRound();
+
+    return () => clearTimeout(timeout);
   }, []);
 
-  useEffect(() => {
-    const dot = dotRef.current;
-    if (!dot) return;
-    dot.animate(
-      [{ offsetDistance: "0%" }, { offsetDistance: "100%" }],
-      { duration: 6000, iterations: Infinity, easing: "linear" }
-    );
-  }, []);
+  const R = BASE_RADIUS;
+  // Position labels at 120° intervals: top, bottom-right, bottom-left
+  const labelR = R + 20;
+  const labels = [
+    { text: "MAKE", x: 0, y: -labelR, anchor: "middle" as const },
+    { text: "TEST", x: labelR * Math.sin((2 * Math.PI) / 3), y: labelR * Math.cos((2 * Math.PI) / 3), anchor: "start" as const },
+    { text: "LEARN", x: -labelR * Math.sin((2 * Math.PI) / 3), y: labelR * Math.cos((2 * Math.PI) / 3), anchor: "end" as const },
+  ];
 
   return (
-    <svg viewBox="-130 -130 260 260" fill="none" className="w-[260px] h-[260px]">
+    <svg viewBox="-140 -140 280 280" fill="none" className="w-[260px] h-[260px]">
       <g ref={gRef} />
-      <circle
-        ref={dotRef}
-        r="5"
-        fill="hsl(var(--orville-green))"
-        style={{
-          offsetPath: `circle(${BASE_RADIUS}px at 0px 0px)`,
-          offsetRotate: "0deg",
-        }}
-      />
-      <text x="0" y={-BASE_RADIUS - 16} textAnchor="middle" className="font-mono text-[11px] font-medium fill-foreground" letterSpacing="0.08em">MAKE</text>
-      <text x={BASE_RADIUS + 16} y="4" textAnchor="start" className="font-mono text-[11px] font-medium fill-foreground" letterSpacing="0.08em">TEST</text>
-      <text x={-BASE_RADIUS - 16} y="4" textAnchor="end" className="font-mono text-[11px] font-medium fill-foreground" letterSpacing="0.08em">LEARN</text>
+      {labels.map((l) => (
+        <text
+          key={l.text}
+          x={l.x}
+          y={l.y + 4}
+          textAnchor={l.anchor}
+          className="font-mono text-[11px] font-medium fill-foreground"
+          letterSpacing="0.08em"
+        >
+          {l.text}
+        </text>
+      ))}
     </svg>
   );
 }
