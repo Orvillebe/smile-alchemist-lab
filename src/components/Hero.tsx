@@ -5,6 +5,7 @@ import orvilleLogo from "@/assets/orville-logo.png";
 const NAV_ITEMS: [string, string][] = [
   ["Who", "studio"],
   ["Our work", "cases"],
+  ["Our process", "process-link"],
   ["Contact", "contact"],
 ];
 
@@ -17,8 +18,13 @@ export default function Hero() {
     return () => window.removeEventListener("scroll", h);
   }, []);
 
-  const go = (id: string) =>
+  const go = (id: string) => {
+    if (id === "process-link") {
+      window.location.href = "/process";
+      return;
+    }
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <section className="min-h-screen flex flex-col justify-center bg-orville-charcoal relative">
@@ -26,8 +32,8 @@ export default function Hero() {
       <header
         className="fixed top-0 left-0 right-0 z-50 px-6 md:px-10 py-4 transition-all duration-400"
         style={{
-          background: scrolled ? "rgba(255,255,255,0.96)" : "transparent",
-          backdropFilter: scrolled ? "blur(10px)" : "none",
+          background: scrolled ? "rgba(245,244,240,0.92)" : "transparent",
+          backdropFilter: scrolled ? "blur(12px)" : "none",
           borderBottom: scrolled
             ? "1px solid hsl(var(--border))"
             : "1px solid transparent",
