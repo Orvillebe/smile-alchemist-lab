@@ -7,11 +7,11 @@ export default function NameSection() {
     <section className="bg-orville-offwhite px-6 md:px-10 py-[88px] border-t border-border">
       <div className="max-w-[1200px] mx-auto">
         <Fade>
+          <Label variant="green" className="mb-10">{t.name.label}</Label>
+        </Fade>
+        <Fade delay={0.08}>
           <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-10 md:gap-[60px] items-start">
             <div>
-              <Label variant="green" className="mb-4">
-                {t.name.label}
-              </Label>
               <h2 className="font-heading text-[clamp(28px,3.5vw,42px)] font-semibold text-foreground leading-[1.25] mb-2 tracking-tight">
                 {t.name.title}
               </h2>

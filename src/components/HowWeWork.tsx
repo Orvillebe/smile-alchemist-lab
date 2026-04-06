@@ -9,7 +9,7 @@ export default function HowWeWork() {
     <section className="bg-orville-offwhite px-6 md:px-10 py-24">
       <div className="max-w-[1200px] mx-auto">
         <Fade>
-          <Label className="mb-12">{t.howWeWork.label}</Label>
+          <Label className="mb-10">{t.howWeWork.label}</Label>
         </Fade>
         <div className="max-w-[600px]">
           {t.howWeWork.items.map((item, i) => (

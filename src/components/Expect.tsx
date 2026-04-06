@@ -7,7 +7,7 @@ export default function Expect() {
     <section className="bg-white px-6 md:px-10 py-24">
       <div className="max-w-[1200px] mx-auto">
         <Fade>
-          <Label className="mb-12">{t.expect.label}</Label>
+          <Label className="mb-10">{t.expect.label}</Label>
         </Fade>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-x-12 md:gap-y-8">
           {t.expect.items.map((item, i) => (
