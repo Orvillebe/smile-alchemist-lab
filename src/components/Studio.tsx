@@ -21,14 +21,23 @@ export default function Studio() {
           </p>
         </Fade>
 
-        {/* Photo */}
-        <Fade delay={0.15}>
-          <img
-            src={teamPhoto}
-            alt="An Pirlot and Vincent Ramaekers at work"
-            className="w-full max-w-[600px] rounded object-cover mb-14"
-          />
-        </Fade>
+        {/* Photo + Together */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-end mb-14">
+          <Fade delay={0.15}>
+            <img
+              src={teamPhoto}
+              alt="An Pirlot and Vincent Ramaekers at work"
+              className="w-full rounded object-cover"
+            />
+          </Fade>
+          <Fade delay={0.2}>
+            <p className="font-body text-[17px] leading-[1.7] text-foreground">
+              Together: she sees across subjects to the pattern, he sees through a
+              subject to its core. Nothing gets missed. Something gets decided.
+              Founded in 2019.
+            </p>
+          </Fade>
+        </div>
 
         {/* People grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
