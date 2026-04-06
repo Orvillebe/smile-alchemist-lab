@@ -102,7 +102,7 @@ export default function Hero() {
           </Fade>
         </div>
           <Fade delay={0.4}>
-            <img src={orvilleCircle} alt="Orville circle logo" className="hidden md:block w-[380px] h-[380px] object-contain mt-4 mix-blend-lighten" />
+            <img src={orvilleCircle} alt="Orville circle logo" className="hidden md:block w-[380px] h-[380px] object-contain mt-4 mix-blend-screen" />
           </Fade>
         </div>
       </div>
