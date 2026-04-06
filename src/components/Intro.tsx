@@ -16,8 +16,8 @@ export default function Intro() {
         <Fade delay={0.14}>
           <p className="font-body text-[15px] md:text-[16px] leading-[1.7] text-orville-mid max-w-[720px]">
             Mechanical engineering, material selection, design for manufacturing,
-            functional prototyping. For companies where circularity, modularity,
-            or technical feasibility are central to the brief.
+            functional prototyping, 3D modeling, and CAD/CAM. For companies where
+            circularity, modularity, or technical feasibility are central to the brief.
           </p>
         </Fade>
       </div>
