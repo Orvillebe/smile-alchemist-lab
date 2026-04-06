@@ -1,8 +1,7 @@
 import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { Fade, Label } from "./Fade";
-
-const STEPS = [
+import { useLanguage } from "@/i18n/LanguageContext";
   {
     n: "01",
     title: "Dissect",
