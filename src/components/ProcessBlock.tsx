@@ -201,7 +201,7 @@ export default function ProcessBlock() {
                   Method
                 </p>
                 <p className="font-body text-sm leading-[1.65] text-orville-mid mb-6">
-                  Within each phase we make, test what we made, and let the result determine the next step.
+                  Within each phase we iteratively make, test what we made, and let the result determine the next step.
                 </p>
                 <Link
                   to="/process"
