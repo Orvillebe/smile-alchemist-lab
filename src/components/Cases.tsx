@@ -3,95 +3,23 @@ import { Fade, Label } from "./Fade";
 import fairvacuumImg from "@/assets/fairvacuum.jpg";
 import itrackImg from "@/assets/itrack.png";
 import icall2Img from "@/assets/icall2.jpg";
+import { useLanguage } from "@/i18n/LanguageContext";
 
-const INDIGO_WHY =
-  "Manufacturing in the EU. Value in knowing how to make things. Repairing instead of replacing. Products that last.";
-
-interface Project {
-  tab: string;
-  client: string;
-  image: string | null;
-  name: string;
-  tags: string[];
-  problem: string;
-  what: string;
-  why: string;
-}
-
-const PROJECTS: Project[] = [
-  {
-    tab: "Model 1",
-    client: "FairVacuum",
-    image: fairvacuumImg,
-    name: "Model 1",
-    tags: ["circular", "modular", "e-waste", "universal"],
-    problem:
-      "Vacuum cleaners die as a unit when one component fails. The real waste isn't the broken part, it's the perfectly functional parts that get thrown away with it.",
-    what: "Designed a modular vacuum housing that allows individual components to be replaced independently. Developed the snap-fit system, material selection for recycled plastics, and full production-ready CAD. From problem definition through prototyping to manufacture-ready.",
-    why: "Right to repair. Cleaning up a world dirtied by others. That others profit from pollution doesn't mean we should too.",
-  },
-  {
-    tab: "Multimedia Handset",
-    client: "IndigoCare",
-    image:
-      "https://www.orville.be/web/image/1156-185d6852/mmhandset2.png",
-    name: "Multimedia Handset",
-    tags: ["healthcare", "waterproof", "DFM"],
-    problem:
-      "How do you take a beautiful sketch and a partially completed model and turn it into something customizable, waterproof, and ready for production?",
-    what: "Took a partially completed model and turned it into a customizable, waterproof, production-ready design. Full mechanical engineering, DFM, and manufacturer coordination.",
-    why: INDIGO_WHY,
-  },
-  {
-    tab: "PURE-D",
-    client: "Denck",
-    image:
-      "https://www.orville.be/web/image/1149-fcfa87fe/pure-d-header-muse-min.png",
-    name: "PURE-D",
-    tags: ["startup", "thermoset compression", "consumer product"],
-    problem:
-      "How do you build reliable ventilation into a toilet seat people use daily, without electrical connection, at a consumer price point?",
-    what: "Full product development from concept through prototyping to production-ready design. Mechanical engineering, airflow simulation, material selection, and DFM for thermoset compression moulding.",
-    why: "Dennis is honest and fair. He believes in building things locally, with people worth trusting. Making money, but not by stealing it from others.",
-  },
-  {
-    tab: "iTrack",
-    client: "IndigoCare",
-    image: itrackImg,
-    name: "iTrack bracelet",
-    tags: ["healthcare", "wearable", "waterproof", "tool-free battery swap"],
-    problem:
-      "Three wireless technologies need to coexist in one housing small enough to wear on a wrist, robust enough for daily use in healthcare, and waterproof. On top of that, the battery must be replaceable without tools or adhesives — and the housing must remain watertight after every swap.",
-    what: "Designed a compact housing integrating three wireless technologies. Engineered a tool-free battery replacement mechanism that maintains the waterproof seal. Full mechanical design, waterproofing strategy, comfort testing, and production-ready CAD.",
-    why: INDIGO_WHY,
-  },
-  {
-    tab: "iCall 2",
-    client: "IndigoCare",
-    image: icall2Img,
-    name: "iCall 2",
-    tags: ["healthcare", "modularity", "open-ended design", "upgradability"],
-    problem:
-      "Healthcare equipment gets replaced, not repaired. How do you redesign an entire product range so field support can fix it on-site, with fewer parts, fewer materials, and housings shared across models — while keeping the platform open for future upgrades?",
-    what: "Redesigned the entire product range around modularity and upgradability. Shared housings across models, reduced part count, designed for on-site repair by support staff, and built in an open-ended architecture that accommodates future modules without redesign.",
-    why: INDIGO_WHY,
-  },
-  {
-    tab: "Foote",
-    client: "Orville",
-    image: "https://www.orville.be/web/image/1150-13a13916/Foote.gif",
-    name: "Foote",
-    tags: ["own product", "ergonomic", "bamboo", "portable"],
-    problem:
-      "A portable monitor needs a stand. Every stand is a separate piece you forget, lose, or fumble with. Can the stand simply be part of the monitor — and be ergonomic enough for daily use?",
-    what: "Full product development and go-to-market. From first sketch to shipping label. Mechanical design, ergonomic positioning, material selection (bamboo), hinge engineering, packaging, and production coordination.",
-    why: "We wanted to prove we could take a product from concept to market. Not advise — do. From the first sketch to the shipping label.",
-  },
-];
+const IMAGES: Record<string, string | null> = {
+  "Model 1": fairvacuumImg,
+  "Multimedia Handset": "https://www.orville.be/web/image/1156-185d6852/mmhandset2.png",
+  "PURE-D": "https://www.orville.be/web/image/1149-fcfa87fe/pure-d-header-muse-min.png",
+  "iTrack": itrackImg,
+  "iCall 2": icall2Img,
+  "Foote": "https://www.orville.be/web/image/1150-13a13916/Foote.gif",
+};
 
 export default function Cases() {
   const [active, setActive] = useState(0);
-  const p = PROJECTS[active];
+  const { t } = useLanguage();
+  const projects = t.cases.projects;
+  const p = projects[active];
+  const image = IMAGES[p.tab] ?? null;
 
   return (
     <section
@@ -100,22 +28,21 @@ export default function Cases() {
     >
       <div className="max-w-[1200px] mx-auto">
         <Fade>
-          <Label className="mb-6">Cases</Label>
+          <Label className="mb-6">{t.cases.label}</Label>
         </Fade>
         <Fade delay={0.05}>
           <h2 className="font-heading text-[clamp(28px,3.5vw,42px)] font-semibold text-foreground leading-[1.25] max-w-[720px] mb-12 tracking-tight">
-            Projects where we said yes for a reason.
+            {t.cases.heading}
           </h2>
         </Fade>
 
-        {/* Tabs — underline style */}
         <Fade delay={0.1}>
           <div className="flex gap-0 overflow-x-auto border-b border-border mb-16">
-            {PROJECTS.map((proj, i) => (
+            {projects.map((proj, i) => (
               <button
                 key={proj.tab}
                 onClick={() => setActive(i)}
-                className={`px-0 pr-10 pb-4 text-left flex-shrink-0 relative transition-colors duration-200`}
+                className="px-0 pr-10 pb-4 text-left flex-shrink-0 relative transition-colors duration-200"
               >
                 <span
                   className={`font-heading text-[15px] block leading-snug transition-colors duration-200 ${
@@ -133,7 +60,6 @@ export default function Cases() {
                 >
                   {proj.client}
                 </span>
-                {/* Active underline */}
                 <span
                   className={`absolute bottom-0 left-0 right-10 h-[2px] transition-all duration-200 ${
                     active === i ? "bg-foreground" : "bg-transparent"
@@ -144,30 +70,24 @@ export default function Cases() {
           </div>
         </Fade>
 
-        {/* Project detail */}
         <div
           key={active}
           className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-12 md:gap-16 animate-fade-in"
         >
-          {/* Left: image + meta */}
           <div>
-            {/* Image */}
-            {p.image && (
+            {image && (
               <img
-                src={p.image}
+                src={image}
                 alt={p.name}
                 className="w-full rounded block bg-background mb-8"
               />
             )}
-
             <p className="font-mono text-xs text-orville-mid uppercase tracking-[1.5px] mb-2">
               {p.client}
             </p>
             <h3 className="font-heading text-[clamp(24px,3vw,36px)] font-semibold text-foreground leading-tight tracking-tight mb-5">
               {p.name}
             </h3>
-
-            {/* Tags */}
             <div className="flex flex-wrap gap-2">
               {p.tags.map((tag) => (
                 <span
@@ -180,29 +100,26 @@ export default function Cases() {
             </div>
           </div>
 
-          {/* Right: content sections */}
           <div className="flex flex-col gap-10">
             <div>
               <p className="font-mono text-xs text-orville-green uppercase tracking-[2px] mb-3">
-                The core problem
+                {t.cases.coreProblem}
               </p>
               <p className="font-body text-[17px] leading-[1.7] text-orville-mid">
                 {p.problem}
               </p>
             </div>
-
             <div>
               <p className="font-mono text-xs text-orville-green uppercase tracking-[2px] mb-3">
-                What we did
+                {t.cases.whatWeDid}
               </p>
               <p className="font-body text-[17px] leading-[1.7] text-orville-mid">
                 {p.what}
               </p>
             </div>
-
             <div>
               <p className="font-mono text-xs text-orville-green uppercase tracking-[2px] mb-3">
-                Why we said yes
+                {t.cases.whyYes}
               </p>
               <p className="font-body text-[17px] leading-[1.7] text-orville-mid">
                 {p.why}
