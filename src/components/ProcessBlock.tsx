@@ -165,7 +165,7 @@ export default function ProcessBlock() {
           <Fade delay={0.1}>
             <div>
               <h2 className="font-heading text-[clamp(28px,3.5vw,42px)] font-semibold leading-[1.25] text-foreground mb-10 tracking-tight">
-                Three phases, one method. The result determines the next step.
+                Three phases, one method.
               </h2>
               <div className="flex flex-col">
                 {STEPS.map((step, i) => (
