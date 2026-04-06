@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Fade, Label } from "./Fade";
 import orvilleLogo from "@/assets/orville-logo.png";
-import HandDrawnCircle from "./HandDrawnCircle";
+import FlightPlanBg from "./FlightPlanBg";
 
 const NAV_ITEMS: [string, string][] = [
   ["Who", "studio"],
@@ -28,7 +28,10 @@ export default function Hero() {
   };
 
   return (
-    <section className="min-h-screen flex flex-col justify-center bg-orville-charcoal relative">
+    <section className="min-h-screen flex flex-col justify-center bg-orville-charcoal relative overflow-hidden">
+      {/* Flight plan background */}
+      <FlightPlanBg className="absolute inset-0 w-full h-full pointer-events-none opacity-[0.38]" />
+
       {/* Nav */}
       <header
         className="fixed top-0 left-0 right-0 z-50 px-6 md:px-10 py-4 transition-all duration-400"
@@ -73,36 +76,30 @@ export default function Hero() {
       </header>
 
       {/* Hero content */}
-      <div className="max-w-[1200px] mx-auto w-full px-6 md:px-10">
-        <div className="flex items-start gap-8 md:gap-12">
-          <div className="max-w-[860px] flex-1">
-          <Fade delay={0.15}>
-            <Label variant="green" className="mb-7">
-              Product Design & Engineering
-            </Label>
-          </Fade>
-          <Fade delay={0.35}>
-            <h1 className="font-heading text-3xl md:text-[46px] font-light leading-[1.22] text-orville-offwhite tracking-tight">
-              Design choices are never neutral.
-            </h1>
-          </Fade>
-          <Fade delay={0.5}>
-            <h1 className="font-heading text-3xl md:text-[46px] font-semibold leading-[1.22] text-orville-offwhite tracking-tight mb-8">
-              We co-pilot yours so your product becomes part of the solution, not
-              the problem.
-            </h1>
-          </Fade>
-          <Fade delay={0.65}>
-            <p className="font-body text-[17px] leading-[1.75] text-orville-mid max-w-[560px]">
-              Two engineers from Belgium developing modular, repairable physical
-              products at the intersection of circularity and technical
-              feasibility. We validate the problem before we design the solution.
-              Then we stay with it, from concept to production.
-            </p>
-          </Fade>
-        </div>
-          <HandDrawnCircle className="hidden md:block w-[440px] h-[440px] mt-4 flex-shrink-0" />
-        </div>
+      <div className="max-w-[1200px] mx-auto w-full px-6 md:px-10 relative z-10">
+        <Fade delay={0.15}>
+          <Label variant="green" className="mb-7">
+            Product Design & Engineering
+          </Label>
+        </Fade>
+        <Fade delay={0.35}>
+          <h1 className="font-heading text-3xl md:text-[46px] font-light leading-[1.22] text-orville-offwhite tracking-tight">
+            Design choices are never neutral.
+          </h1>
+        </Fade>
+        <Fade delay={0.5}>
+          <h1 className="font-heading text-3xl md:text-[46px] font-semibold leading-[1.22] text-orville-offwhite tracking-tight mb-8">
+            We co-pilot yours so your product becomes part of the solution, not
+            the problem.
+          </h1>
+        </Fade>
+        <Fade delay={0.65}>
+          <p className="font-body text-[17px] leading-[1.75] text-orville-mid max-w-[560px]">
+            Two engineers from Belgium developing modular, repairable physical
+            products at the intersection of circularity and technical
+            feasibility. From concept to production.
+          </p>
+        </Fade>
       </div>
 
       {/* Scroll indicator */}
