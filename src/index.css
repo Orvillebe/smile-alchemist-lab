@@ -87,29 +87,50 @@
   to { opacity: 1; transform: translateY(0); }
 }
 
-@property --sweep-angle {
+@property --draw-r {
+  syntax: "<percentage>";
+  initial-value: 0%;
+  inherits: false;
+}
+
+@property --sweep-a {
   syntax: "<angle>";
   initial-value: 0deg;
   inherits: false;
 }
 
-@keyframes circle-sweep {
+@keyframes circle-draw {
   0% {
-    --sweep-angle: 0deg;
+    --draw-r: 0%;
+    --sweep-a: 0deg;
     opacity: 0;
   }
-  5% {
-    opacity: 0.8;
+  4% {
+    opacity: 1;
   }
+  /* Ring 1: inner */
+  33% {
+    --draw-r: 25%;
+    --sweep-a: 360deg;
+  }
+  /* Ring 2: middle */
+  66% {
+    --draw-r: 48%;
+    --sweep-a: 720deg;
+  }
+  /* Ring 3: outer — full reveal */
   100% {
-    --sweep-angle: 1080deg;
+    --draw-r: 75%;
+    --sweep-a: 1080deg;
     opacity: 1;
   }
 }
 
 .animate-circle-draw {
-  animation: circle-sweep 2.5s cubic-bezier(0.25, 0.1, 0.25, 1) 0.5s forwards;
+  animation: circle-draw 3s cubic-bezier(0.22, 0.6, 0.36, 1) 0.5s forwards;
   opacity: 0;
-  -webkit-mask-image: conic-gradient(from 0deg, #000 var(--sweep-angle), transparent var(--sweep-angle));
-  mask-image: conic-gradient(from 0deg, #000 var(--sweep-angle), transparent var(--sweep-angle));
+  -webkit-mask-image:
+    radial-gradient(circle at 50% 50%, #000 0%, #000 var(--draw-r), transparent calc(var(--draw-r) + 4%));
+  mask-image:
+    radial-gradient(circle at 50% 50%, #000 0%, #000 var(--draw-r), transparent calc(var(--draw-r) + 4%));
 }
