@@ -60,11 +60,7 @@ export default function Hero() {
               <button
                 key={id}
                 onClick={() => go(id)}
-                className={`font-mono text-xs tracking-[0.05em] transition-colors duration-300 ${
-                  scrolled
-                    ? "text-orville-mid hover:text-foreground"
-                    : "text-white/50 hover:text-orville-offwhite"
-                }`}
+                className="font-mono text-xs tracking-[0.05em] transition-colors duration-300 text-white/50 hover:text-orville-offwhite"
               >
                 {label}
               </button>
