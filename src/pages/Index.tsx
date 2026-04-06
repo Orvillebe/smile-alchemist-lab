@@ -1,7 +1,8 @@
 import Hero from "@/components/Hero";
 import Intro from "@/components/Intro";
-import HowWeWork from "@/components/HowWeWork";
+import Expect from "@/components/Expect";
 import Collaboration from "@/components/Collaboration";
+import HowWeWork from "@/components/HowWeWork";
 import Studio from "@/components/Studio";
 import Cases from "@/components/Cases";
 import NameSection from "@/components/NameSection";
@@ -12,8 +13,9 @@ const Index = () => {
     <div className="bg-background text-foreground">
       <Hero />
       <Intro />
-      <HowWeWork />
+      <Expect />
       <Collaboration />
+      <HowWeWork />
       <Studio />
       <Cases />
       <NameSection />

@@ -14,6 +14,7 @@ interface Project {
   imagePlaceholder?: string;
   name: string;
   description: string;
+  what: string;
   why: string;
   problem: string;
 }
@@ -26,9 +27,10 @@ const PROJECTS: Project[] = [
     name: "FairVacuum",
     description:
       "Circular vacuum cleaner — modular housing built around reused components.",
+    what: "Designed a modular vacuum housing that allows individual components to be replaced independently. Developed the snap-fit system, material selection for recycled plastics, and full production-ready CAD. From problem definition through prototyping to manufacturer handoff.",
     why: "Right to repair. Cleaning up a world dirtied by others. That others profit from pollution doesn't mean we should too.",
     problem:
-      "Vacuums are discarded when one component fails. The rest works fine. Full modularity makes products expensive and complex. Where is the line?",
+      "Vacuums are discarded when one component fails. The rest works fine. How do you minimize e-waste by getting the maximum lifetime out of each part?",
   },
   {
     tab: "Multimedia Handset",
@@ -38,6 +40,7 @@ const PROJECTS: Project[] = [
     name: "Multimedia Handset",
     description:
       "The first multimedia handset that can be used upside down. IndigoCare had a sketch and a clear requirement: make it customizable, make it waterproof, make it work. We turned it into a producible design.",
+    what: "Took a partially completed model and turned it into a customizable, waterproof, production-ready design. Full mechanical engineering, DFM, and manufacturer coordination.",
     why: INDIGO_WHY,
     problem:
       "How do you take a beautiful sketch and a partially completed model and turn it into something customizable, waterproof, and ready for production?",
@@ -50,6 +53,7 @@ const PROJECTS: Project[] = [
     name: "PURE-D",
     description:
       "Toilet seat with integrated odor extraction. Made in Belgium. Technically complex consumer product, developed through two-weekly prototypes.",
+    what: "Full product development from concept through prototyping to production-ready design. Mechanical engineering, airflow simulation, material selection, and DFM for injection moulding.",
     why: "Dennis is honest and fair. He believes in building things locally, with people worth trusting. Making money, but not by stealing it from others.",
     problem:
       "How do you build reliable ventilation into a toilet seat people use daily, without electrical connection, at a consumer price point?",
@@ -61,6 +65,7 @@ const PROJECTS: Project[] = [
     name: "iTrack bracelet",
     description:
       "Wireless nurse call bracelet combining three different wireless technologies into one reliable, waterproof, comfortable housing. Designed for daily wear in care environments.",
+    what: "Designed a compact housing integrating three wireless technologies. Full mechanical design, waterproofing strategy, comfort testing, and production-ready CAD.",
     why: INDIGO_WHY,
     problem:
       "Three wireless technologies need to coexist in one housing small enough to wear on a wrist, robust enough for daily use in healthcare, and waterproof. How do you fit all that without compromising any of it?",
@@ -73,6 +78,7 @@ const PROJECTS: Project[] = [
     name: "iCall 2",
     description:
       "Complete redesign of their entire standard nurse call range. 10+ housings. Quick assembly, on-site repair by customer support, one housing across multiple models, fewer parts, fewer materials. They trusted us with everything.",
+    what: "Redesigned the entire product range for field serviceability. Shared housings across models, reduced part count, designed for on-site repair by support staff.",
     why: INDIGO_WHY,
     problem:
       "Healthcare equipment gets replaced, not repaired. How do you redesign an entire product range so field support can fix it on-site, with fewer parts, fewer materials, and housings shared across models?",
@@ -84,6 +90,7 @@ const PROJECTS: Project[] = [
     name: "Foote",
     description:
       "Portable monitor with integrated foldable bamboo stand. Designed, prototyped, tested, and brought to market ourselves.",
+    what: "Full product development and go-to-market. From first sketch to shipping label. Mechanical design, material selection (bamboo), hinge engineering, packaging, and production coordination.",
     why: "We wanted to prove we could take a product from concept to market. Not advise — do. From the first sketch to the shipping label.",
     problem:
       "A portable monitor needs a stand. Every stand is a separate piece you forget, lose, or fumble with. Can the stand simply be part of the monitor?",
@@ -104,17 +111,17 @@ export default function Cases() {
           <Label className="mb-8">Our work</Label>
         </Fade>
 
-        {/* Browser-style tabs */}
+        {/* Pill-style tabs */}
         <Fade delay={0.1}>
-          <div className="flex overflow-x-auto border-b border-border mb-0">
+          <div className="flex gap-1 overflow-x-auto bg-white/60 border border-border rounded-lg p-1.5">
             {PROJECTS.map((proj, i) => (
               <button
                 key={proj.tab}
                 onClick={() => setActive(i)}
-                className={`relative px-5 py-3 text-left transition-all duration-200 flex-shrink-0 border-t border-x ${
+                className={`px-4 py-2.5 rounded-md text-left transition-all duration-200 flex-shrink-0 ${
                   active === i
-                    ? "bg-orville-charcoal border-border rounded-t-lg -mb-px z-10"
-                    : "bg-transparent border-transparent hover:bg-muted/50 rounded-t-lg"
+                    ? "bg-orville-charcoal shadow-sm"
+                    : "bg-transparent hover:bg-black/[0.04]"
                 }`}
               >
                 <span
@@ -141,7 +148,7 @@ export default function Cases() {
         {/* Project detail */}
         <div
           key={active}
-          className="grid grid-cols-1 md:grid-cols-[5fr_7fr] gap-12 py-12 animate-fade-in"
+          className="grid grid-cols-1 md:grid-cols-[5fr_7fr] gap-12 pt-12 animate-fade-in"
         >
           {/* Image */}
           <div>
@@ -166,7 +173,7 @@ export default function Cases() {
           {/* Content */}
           <div>
             <Label className="mb-1.5">{p.client}</Label>
-            <h3 className="font-heading text-[26px] font-semibold text-foreground mt-1 mb-4 leading-tight">
+            <h3 className="font-heading text-[26px] font-semibold text-foreground mt-1 mb-2 leading-tight tracking-tight">
               {p.name}
             </h3>
             <p className="font-body text-[15px] leading-[1.7] text-orville-mid mb-7">
@@ -180,6 +187,12 @@ export default function Cases() {
                 </Label>
                 <p className="font-body text-sm leading-[1.65] text-foreground italic">
                   {p.why}
+                </p>
+              </div>
+              <div className="border-l-[3px] border-foreground pl-4">
+                <Label className="mb-1.5">What we did</Label>
+                <p className="font-body text-[15px] leading-[1.6] text-foreground">
+                  {p.what}
                 </p>
               </div>
               <div className="border-l-[3px] border-orville-amber pl-4">

@@ -17,22 +17,26 @@ const ITEMS = [
 
 export default function HowWeWork() {
   return (
-    <section className="bg-orville-offwhite px-6 md:px-10 py-20">
+    <section className="bg-orville-offwhite px-6 md:px-10 py-24">
       <div className="max-w-[1200px] mx-auto">
         <Fade>
           <Label className="mb-12">How we work</Label>
         </Fade>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-14">
+        <div className="max-w-[600px]">
           {ITEMS.map((item, i) => (
             <Fade key={item.n} delay={0.1 + i * 0.08}>
-              <div>
-                <Label variant="green" className="mb-2">
-                  {item.n}
-                </Label>
-                <h3 className="font-heading text-[20px] md:text-[22px] font-semibold text-foreground mb-3 leading-snug">
-                  {item.title}
-                </h3>
-                <p className="font-body text-[15px] leading-[1.75] text-orville-mid">
+              <div
+                className={`pb-8 mb-8 ${
+                  i < ITEMS.length - 1 ? "border-b border-border" : ""
+                }`}
+              >
+                <div className="flex items-baseline gap-4 mb-3">
+                  <Label variant="green">{item.n}</Label>
+                  <h3 className="font-heading text-[18px] font-medium text-foreground leading-snug">
+                    {item.title}
+                  </h3>
+                </div>
+                <p className="font-body text-[15px] leading-[1.7] text-orville-mid pl-9">
                   {item.text}
                 </p>
               </div>
@@ -40,7 +44,7 @@ export default function HowWeWork() {
           ))}
         </div>
         <Fade delay={0.3}>
-          <div className="mt-14">
+          <div className="mt-2">
             <Link
               to="/process"
               className="inline-flex items-center gap-2 font-heading text-[15px] font-medium text-foreground hover:text-orville-green transition-colors duration-200 group"
