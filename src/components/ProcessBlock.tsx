@@ -124,17 +124,18 @@ function CycleVisual() {
     return () => clearTimeout(timeout);
   }, []);
 
-  const R = BASE_RADIUS;
-  // Position labels at 120° intervals: top, bottom-right, bottom-left
-  const labelR = R + 20;
-  const labels = [
-    { text: "MAKE", x: 0, y: -labelR, anchor: "middle" as const },
-    { text: "TEST", x: labelR * Math.sin((2 * Math.PI) / 3), y: labelR * Math.cos((2 * Math.PI) / 3), anchor: "start" as const },
-    { text: "LEARN", x: -labelR * Math.sin((2 * Math.PI) / 3), y: labelR * Math.cos((2 * Math.PI) / 3), anchor: "end" as const },
-  ];
+  const labelR = BASE_RADIUS + 30;
+  // 120° intervals starting from top: -90°, +30°, +150°
+  const angles = [-90, 30, 150];
+  const texts = ["MAKE", "TEST", "LEARN"];
+  const anchors: ("middle" | "start" | "end")[] = ["middle", "start", "end"];
+  const labels = texts.map((text, i) => {
+    const a = (angles[i] * Math.PI) / 180;
+    return { text, x: labelR * Math.cos(a), y: labelR * Math.sin(a), anchor: anchors[i] };
+  });
 
   return (
-    <svg viewBox="-140 -140 280 280" fill="none" className="w-[260px] h-[260px]">
+    <svg viewBox="-160 -160 320 320" fill="none" className="w-[280px] h-[280px]">
       <g ref={gRef} />
       {labels.map((l) => (
         <text
