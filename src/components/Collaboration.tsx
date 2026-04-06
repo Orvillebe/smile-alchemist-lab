@@ -8,7 +8,7 @@ export default function Collaboration() {
           <Label className="mb-6">The collaboration</Label>
         </Fade>
         <Fade delay={0.08}>
-          <p className="font-heading text-[20px] md:text-[clamp(20px,2.4vw,24px)] font-normal text-orville-offwhite leading-[1.38] max-w-[760px] mb-6 tracking-tight">
+          <p className="font-heading text-[20px] md:text-[clamp(20px,2.4vw,24px)] font-normal text-orville-offwhite leading-[1.38] max-w-[860px] mb-6 tracking-tight">
             We work with you the way a{" "}
             <span className="text-orville-green">co-pilot</span> works with a
             pilot. You don't hand us a problem and get a three-weekly update.
