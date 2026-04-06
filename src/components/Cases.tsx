@@ -96,7 +96,7 @@ export default function Cases() {
   return (
     <section
       id="cases"
-      className="bg-orville-offwhite px-6 md:px-12 py-24 md:py-[100px]"
+      className="bg-orville-offwhite px-6 md:px-10 py-24 md:py-[100px]"
     >
       <div className="max-w-[1200px] mx-auto">
         <Fade>
