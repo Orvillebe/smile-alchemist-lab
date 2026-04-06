@@ -17,7 +17,7 @@ export default function Collaboration() {
           </p>
         </Fade>
         <Fade delay={0.14}>
-          <p className="font-body text-[15px] leading-[1.7] text-orville-mid max-w-[500px]">
+          <p className="font-body text-[15px] leading-[1.7] text-orville-mid max-w-[600px]">
             Where possible, a day per week at your location. This isn't a
             courtesy visit. It strengthens communication, sharpens decisions, and
             makes sure nothing gets lost in translation between meetings.
