@@ -74,7 +74,8 @@ export default function Hero() {
 
       {/* Hero content */}
       <div className="max-w-[1200px] mx-auto w-full px-6 md:px-10">
-        <div className="max-w-[860px]">
+        <div className="flex items-start gap-8 md:gap-12">
+          <div className="max-w-[860px] flex-1">
           <Fade delay={0.15}>
             <Label variant="green" className="mb-7">
               Product Design & Engineering
