@@ -101,9 +101,13 @@ export default function Hero() {
             </p>
           </Fade>
         </div>
-          <Fade delay={0.4}>
-            <img src={orvilleCircle} alt="Orville circle logo" className="hidden md:block w-[380px] h-[380px] object-contain mt-4" />
-          </Fade>
+          <div className="hidden md:block w-[440px] h-[440px] mt-4 flex-shrink-0">
+            <img
+              src={orvilleCircle}
+              alt="Orville circle logo"
+              className="w-full h-full object-contain animate-circle-draw"
+            />
+          </div>
         </div>
       </div>
 
