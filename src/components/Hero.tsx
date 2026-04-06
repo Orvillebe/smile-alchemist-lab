@@ -50,8 +50,7 @@ export default function Hero() {
           >
             <img src={orvilleLogo} alt="Orville" className="h-8 w-8 rounded" />
             <span
-              className={`font-heading text-lg font-semibold tracking-tight transition-colors duration-400 text-orville-offwhite`}
-              }`}
+              className="font-heading text-lg font-semibold tracking-tight text-orville-offwhite"
             >
               Orville
             </span>
