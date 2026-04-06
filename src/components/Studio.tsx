@@ -9,9 +9,7 @@ export default function Studio() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-end mb-12 md:mb-[72px]">
           <div>
             <Fade>
-              <p className="font-mono text-xs text-orville-mid uppercase tracking-[2px] mb-6">
-                The people
-              </p>
+              <Label className="mb-6">The people</Label>
             </Fade>
             <Fade delay={0.05}>
               <h2 className="font-heading font-semibold text-foreground text-[clamp(26px,3.2vw,38px)] leading-[1.25] mb-3">
