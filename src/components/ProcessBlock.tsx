@@ -51,7 +51,6 @@ function makeWobbleCircle(baseRadius: number, wobbleAmt: number, seed: number): 
 
 function CycleVisual() {
   const gRef = useRef<SVGGElement>(null);
-  const dotRef = useRef<SVGCircleElement>(null);
 
   useEffect(() => {
     const g = gRef.current;
