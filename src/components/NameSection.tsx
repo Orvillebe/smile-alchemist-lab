@@ -2,7 +2,7 @@ import { Fade, Label } from "./Fade";
 
 export default function NameSection() {
   return (
-    <section className="bg-background px-6 md:px-10 py-[88px] border-t border-border">
+    <section className="bg-white px-6 md:px-10 py-[88px] border-t border-border">
       <div className="max-w-[1200px] mx-auto">
         <Fade>
           <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-10 md:gap-[60px] items-start">
