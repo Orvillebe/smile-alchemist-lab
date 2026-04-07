@@ -96,6 +96,7 @@ export const en: Translations = {
           "Vacuum cleaners die as a unit when one component fails. The real waste isn't the broken part, it's the perfectly functional parts that get thrown away with it.",
         what: "Designed a modular vacuum housing where every component can be replaced independently. Before committing to production, we built Model 1 as a DIY kit and sold it. Real users, real homes, real data on what works technically, functionally, and as a business. Those kits are being delivered now. Everything we learn feeds straight into Model 2, the production version.",
         why: "Right to repair. Cleaning up a world dirtied by others. That others profit from pollution doesn't mean we should too.",
+        url: "https://www.fairvacuum.com",
       },
       {
         tab: "Multimedia Handset",
@@ -106,6 +107,7 @@ export const en: Translations = {
           "A nurse call handset that needed to work in two orientations. Cable out the top when hanging, cable out the bottom when docked. Fully waterproof in both. On top of that, the battery must be replaceable without tools or adhesives and the housing must remain watertight after every swap. Every configuration choice had to survive daily use in care environments.",
         what: "Took a partially completed model and turned it into a customizable, waterproof, production-ready design. Full mechanical engineering, DFM, manufacturer coordination, and many rounds of waterproof testing with functional prototypes.",
         why: INDIGO_WHY,
+        url: "https://www.indigocare.com/multimedia-handset",
       },
       {
         tab: "PURE-D",
@@ -116,6 +118,7 @@ export const en: Translations = {
           "How do you build reliable ventilation into a toilet seat people use daily, without electrical connection, at a consumer price point?",
         what: "Full product development from concept through prototyping to production-ready design. Mechanical engineering, airflow simulation, material selection, and DFM for thermoset compression moulding.",
         why: "Dennis is honest and fair. He believes in building things locally, with people worth trusting. He's making a product people enjoy, and he's making it properly. No corners cut to get the margin up.",
+        url: "https://www.denck.eu",
       },
       {
         tab: "iTrack",
@@ -126,6 +129,7 @@ export const en: Translations = {
           "Three wireless technologies need to coexist in one housing small enough to wear on a wrist, robust enough for daily use in healthcare, and waterproof. On top of that, the battery must be replaceable without tools or adhesives, and the housing must remain watertight after every swap.",
         what: "Designed a compact housing integrating three wireless technologies. Engineered a tool-free battery replacement mechanism that maintains the waterproof seal. Full mechanical design, waterproofing strategy, comfort testing, and production-ready CAD.",
         why: INDIGO_WHY,
+        url: "https://www.indigocare.com/itrack-wireless-nurse-call",
       },
       {
         tab: "iCall 2",
@@ -136,6 +140,7 @@ export const en: Translations = {
           "Healthcare equipment gets replaced, not repaired. How do you redesign an entire product range so field support can fix it on-site, with fewer parts, fewer materials, and housings shared across models. while keeping the platform open for future upgrades?",
         what: "Redesigned the entire product range around modularity and upgradability. Shared housings across models, reduced part count, designed for on-site repair by support staff, and built in an open-ended architecture that accommodates future modules without redesign.",
         why: INDIGO_WHY,
+        url: "https://www.indigocare.com/icall2",
       },
       {
         tab: "Foote",
@@ -146,6 +151,7 @@ export const en: Translations = {
           "A portable monitor needs a stand. Every stand is a separate piece you forget, lose, or fumble with. Can the stand simply be part of the monitor, and be ergonomic enough for daily use?",
         what: "Full product development and go-to-market. From first sketch to shipping label. Mechanical design, ergonomic positioning, material selection (bamboo), hinge engineering, packaging, and production coordination.",
         why: "We wanted to prove we could take a product from concept to market. Not advise, do. From the first sketch to the shipping label.",
+        url: "https://www.foote.be",
       },
     ],
   },
