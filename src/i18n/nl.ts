@@ -187,7 +187,7 @@ export const nl: Translations = {
     body: "Voor complete productontwikkeling waar circulariteit, herstelbaarheid of technische haalbaarheid centraal staan. Nog niet zeker waar je staat? Een gesprek verduidelijkt dat meestal snel.",
     expectLabel: "Wat te verwachten",
     expectBody: "Reken op een half uur. De meeste mensen blijven langer omdat het onderwerp interessant wordt. Geen verplichtingen, geen intakeprocedure.",
-    footer: "Orville BV. Kortessem, België",
+    footer: "Orville BV, Kortessem, België",
     copyright: "© 2026",
   },
   howWeWork: {

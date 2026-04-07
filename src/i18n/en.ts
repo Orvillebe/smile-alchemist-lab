@@ -143,7 +143,7 @@ export const en: Translations = {
         name: "Foote",
         tags: ["own product", "ergonomic", "bamboo", "portable"],
         problem:
-          "A portable monitor needs a stand. Every stand is a separate piece you forget, lose, or fumble with. Can the stand simply be part of the monitor. and be ergonomic enough for daily use?",
+          "A portable monitor needs a stand. Every stand is a separate piece you forget, lose, or fumble with. Can the stand simply be part of the monitor, and be ergonomic enough for daily use?",
         what: "Full product development and go-to-market. From first sketch to shipping label. Mechanical design, ergonomic positioning, material selection (bamboo), hinge engineering, packaging, and production coordination.",
         why: "We wanted to prove we could take a product from concept to market. Not advise, do. From the first sketch to the shipping label.",
       },
@@ -187,7 +187,7 @@ export const en: Translations = {
     body: "For complete product development where circularity, repairability, or technical feasibility are central. Not sure yet where you stand? A conversation usually clarifies that quickly.",
     expectLabel: "What to expect",
     expectBody: "Block half an hour. Most people stay longer because the subject gets interesting. No obligations, no intake procedure.",
-    footer: "Orville BV. Kortessem, Belgium",
+    footer: "Orville BV, Kortessem, Belgium",
     copyright: "© 2026",
   },
   howWeWork: {
