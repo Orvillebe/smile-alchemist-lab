@@ -11,7 +11,7 @@ export default function Intro() {
         </Fade>
         <div>
           <Fade delay={0.08}>
-            <h2 className="font-heading text-[clamp(28px,3.5vw,42px)] font-semibold text-foreground leading-[1.25] max-w-[900px] mb-4 tracking-tight">
+            <h2 className="font-heading text-[clamp(28px,3.5vw,42px)] font-semibold text-foreground leading-[1.25] mb-4 tracking-tight">
               {t.intro.heading}
             </h2>
           </Fade>

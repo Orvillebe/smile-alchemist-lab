@@ -31,7 +31,7 @@ export default function Cases() {
           <Label className="mb-10">{t.cases.label}</Label>
         </Fade>
         <Fade delay={0.05}>
-          <h2 className="font-heading text-[clamp(28px,3.5vw,42px)] font-semibold text-foreground leading-[1.25] max-w-[720px] mb-12 tracking-tight">
+          <h2 className="font-heading text-[clamp(28px,3.5vw,42px)] font-semibold text-foreground leading-[1.25] mb-12 tracking-tight">
             {t.cases.heading}
           </h2>
         </Fade>
