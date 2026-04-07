@@ -25,7 +25,7 @@ export default function Collaboration() {
             </p>
           </Fade>
           <Fade delay={0.14}>
-            <p className="font-body text-[15px] leading-[1.7] text-orville-mid">
+            <p className="font-body text-lg leading-[1.7] text-orville-offwhite/85">
               {t.collaboration.body}
             </p>
           </Fade>
