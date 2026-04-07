@@ -135,7 +135,7 @@ function CycleVisual({ labels: cycleLabels }: { labels: [string, string, string]
 export default function ProcessBlock() {
   const { t } = useLanguage();
   return (
-    <section className="bg-background px-6 md:px-10 py-[88px] border-t border-border">
+    <section id="how-we-work" className="bg-background px-6 md:px-10 py-[88px] border-t border-border">
       <div className="max-w-[1200px] mx-auto">
         <Fade>
           <Label className="mb-10">{t.process.label}</Label>

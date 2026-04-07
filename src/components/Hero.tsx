@@ -11,7 +11,7 @@ export default function Hero() {
   const NAV_ITEMS: [string, string][] = [
     [t.nav.who, "studio"],
     [t.nav.ourWork, "cases"],
-    [t.nav.ourProcess, "process-link"],
+    [t.nav.ourProcess, "how-we-work"],
     [t.nav.contact, "contact"],
   ];
 
@@ -22,10 +22,6 @@ export default function Hero() {
   }, []);
 
   const go = (id: string) => {
-    if (id === "process-link") {
-      window.location.href = "/process";
-      return;
-    }
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
   };
 
