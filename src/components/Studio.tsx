@@ -5,18 +5,26 @@ import { useLanguage } from "@/i18n/LanguageContext";
 export default function Studio() {
   const { t } = useLanguage();
   return (
-    <section className="bg-background px-6 md:px-10 pb-16 md:pb-[100px]">
+    <section id="studio" className="bg-background px-6 md:px-10 py-16 md:py-[100px]">
       <div className="max-w-[1200px] mx-auto">
+        <Fade>
+          <Label className="mb-10">{t.people.label}</Label>
+        </Fade>
+        <Fade delay={0.05}>
+          <h2 className="font-heading font-semibold text-foreground text-[clamp(28px,3.5vw,42px)] leading-[1.25] mb-12 md:mb-[72px] tracking-tight">
+            {t.people.heading}
+          </h2>
+        </Fade>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-start mb-12 md:mb-[72px]">
-          <Fade delay={0.05}>
+          <Fade delay={0.1}>
             <img
               src={teamPhoto}
               alt="An Pirlot and Vincent Ramaekers at work"
               className="w-full rounded aspect-[3/2] object-cover"
             />
           </Fade>
-          <Fade delay={0.1}>
+          <Fade delay={0.15}>
             <p className="font-body text-[15px] leading-[1.7] text-orville-mid">
               {t.people.body}
             </p>
