@@ -55,16 +55,13 @@ export default function Studio() {
               <p className="font-mono text-[13px] text-orville-mid opacity-60 mt-4">
                 {t.studio.vincent.stuck}
               </p>
+              <p className="font-heading font-medium text-xl leading-[1.5] text-foreground mt-12">
+                {t.studio.together}{" "}
+                <span className="text-orville-mid text-base">{t.studio.founded}</span>
+              </p>
             </div>
           </Fade>
         </div>
-
-        <Fade delay={0.3}>
-          <p className="font-heading font-medium text-xl leading-[1.5] max-w-[640px] text-foreground mt-12 md:mt-[72px]">
-            {t.studio.together}{" "}
-            <span className="text-orville-mid text-base">{t.studio.founded}</span>
-          </p>
-        </Fade>
 
       </div>
     </section>
