@@ -55,10 +55,14 @@ export const nl: Translations = {
     copilot: "co-piloot",
     body: "Waar mogelijk een dag per week bij jou op locatie. Dit is geen beleefdheidsbezoek. Het versterkt de communicatie, verscherpt beslissingen en zorgt dat er niets verloren gaat tussen vergaderingen.",
   },
+  people: {
+    label: "De mensen",
+    heading: "De mensen die de presentatie doen zijn de mensen die het probleem oplossen.",
+    body: "Geen overdracht. Geen juniorteam achter de schermen. Gewoon twee mensen. Bewust maximaal vier projecten tegelijk. De ingenieurs waarmee je praat zijn de ingenieurs die het werk doen.",
+  },
   studio: {
     label: "De mensen",
-    heading:
-      "De mensen die de presentatie doen zijn de mensen die het probleem oplossen.",
+    heading: "De mensen die de presentatie doen zijn de mensen die het probleem oplossen.",
     subtitle: "Geen overdracht. Geen juniorteam achter de schermen.",
     an: {
       name: "An Pirlot",

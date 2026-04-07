@@ -33,6 +33,11 @@ export interface Translations {
     copilot: string;
     body: string;
   };
+  people: {
+    label: string;
+    heading: string;
+    body: string;
+  };
   studio: {
     label: string;
     heading: string;
