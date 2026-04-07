@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Fade, Label } from "./Fade";
 import { useLanguage } from "@/i18n/LanguageContext";
 
-const NUM_STROKES = 20;
+const NUM_STROKES = 40;
 const BASE_RADIUS = 80;
 const WOBBLE = 6;
 const STROKE_DRAW_DURATION = 350;
@@ -52,7 +52,7 @@ function CycleVisual({ labels: cycleLabels }: { labels: [string, string, string]
         path.setAttribute("transform", `rotate(${rotation})`);
         path.setAttribute("fill", "none");
         path.setAttribute("stroke", "hsl(var(--foreground))");
-        path.setAttribute("stroke-width", "1.5");
+        path.setAttribute("stroke-width", "2.2");
         path.setAttribute("stroke-linecap", "round");
         path.setAttribute("stroke-linejoin", "round");
         path.style.opacity = "0";
