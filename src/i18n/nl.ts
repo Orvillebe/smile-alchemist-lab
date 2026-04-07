@@ -169,11 +169,11 @@ export const nl: Translations = {
       },
       {
         n: "02",
-        text: "Wij duiken erin. Papers, naslagwerk, normen, materiaaleigenschappen. Niet oppervlakkig, maar tot we het begrijpen.",
+        text: "Wij duiken erin. Papers, naslagwerk, normen, materiaaleigenschappen. Niet oppervlakkig, maar tot we het begrijpen en ermee kunnen werken.",
       },
       {
         n: "03",
-        text: "Waar nodig gaan we op zoek naar de juiste specialist. Niet iemand die alles half weet, maar de juiste persoon voor het juiste deelprobleem.",
+        text: "Waar nodig (zoals bv bij specifieke wetgeving) gaan we op zoek naar de juiste specialist. Niet iemand die alles half weet, maar de juiste persoon voor het juiste deelprobleem.",
       },
       {
         n: "04",
