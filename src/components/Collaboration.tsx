@@ -14,7 +14,7 @@ export default function Collaboration() {
         </Fade>
         <div>
           <Fade delay={0.08}>
-            <p className="font-heading text-[20px] md:text-[clamp(20px,2.4vw,24px)] font-normal text-orville-offwhite leading-[1.38] max-w-[860px] mb-6 tracking-tight">
+            <p className="font-heading text-[20px] md:text-[clamp(20px,2.4vw,24px)] font-normal text-orville-offwhite leading-[1.38] mb-6 tracking-tight">
               {parts.map((part, i) =>
                 i % 2 === 1 ? (
                   <span key={i} className="text-orville-green">{part}</span>
@@ -25,7 +25,7 @@ export default function Collaboration() {
             </p>
           </Fade>
           <Fade delay={0.14}>
-            <p className="font-body text-[15px] leading-[1.7] text-orville-mid max-w-[600px]">
+            <p className="font-body text-[15px] leading-[1.7] text-orville-mid">
               {t.collaboration.body}
             </p>
           </Fade>
