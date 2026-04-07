@@ -25,7 +25,7 @@ export default function Studio() {
             />
           </Fade>
           <Fade delay={0.15}>
-            <p className="font-heading font-medium text-[clamp(18px,2vw,22px)] leading-[1.5] text-foreground">
+            <p className="font-body text-base leading-[1.7] text-foreground">
               {t.people.body}
             </p>
           </Fade>
