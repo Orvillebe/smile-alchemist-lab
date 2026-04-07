@@ -39,7 +39,7 @@ export const en: Translations = {
       {
         n: "03",
         title: "Develop",
-        desc: "From prototype to production. We stay with it until the product is manufacturable and scalable.",
+        desc: "From prototype to production. We stay with it until it's manufacturable and scalable. A model that works on a screen is easy. We go through a whole series of intermediate prototypes, always finding a way to test, and preferably run the pilot series ourselves. Only when it rolls off a line and still holds up, we're done.",
       },
     ],
     methodLabel: "Method",
