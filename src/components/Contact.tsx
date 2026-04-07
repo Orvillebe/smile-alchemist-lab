@@ -15,7 +15,7 @@ export default function Contact() {
           </h2>
         </Fade>
         <Fade delay={0.12}>
-          <p className="font-body text-[clamp(16px,1.4vw,20px)] leading-[1.65] text-orville-mid max-w-[720px] mb-0">
+          <p className="font-body text-lg leading-[1.7] text-orville-offwhite/85 max-w-[720px] mb-0">
             {t.contact.body}
           </p>
         </Fade>
