@@ -5,11 +5,8 @@ import { useLanguage } from "@/i18n/LanguageContext";
 export default function Studio() {
   const { t } = useLanguage();
   return (
-    <section id="studio" className="bg-background px-6 md:px-10 py-16 md:py-[100px]">
+    <section className="bg-background px-6 md:px-10 pb-16 md:pb-[100px]">
       <div className="max-w-[1200px] mx-auto">
-        <Fade>
-          <Label className="mb-10">{t.studio.label}</Label>
-        </Fade>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-end mb-12 md:mb-[72px]">
           <div>
