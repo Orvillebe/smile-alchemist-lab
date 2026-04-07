@@ -156,27 +156,28 @@ export const nl: Translations = {
     ],
   },
   expect: {
-    label: "Typisch Orville",
-    items: [
+    label: "Nieuw terrein",
+    heading: "We hebben niet alles eerder gedaan maar we zijn erg goed in dingen uitzoeken.",
+    paragraphs: [
+      "FairVacuum was een domein dat we niet kenden. De waterdichte behuizing zonder schroeven een probleem dat we nooit eerder hadden opgelost. Dat is het punt van innoveren.",
+      "We ontwikkelen nieuwe producten. Als we het al eerder hadden gedaan, was er niks nieuws aan.",
+    ],
+    steps: [
       {
         n: "01",
-        title: "Nieuwsgierig van nature",
-        text: "Brede kennis, oprechte nieuwsgierigheid naar hoe dingen écht werken, en een weigering om te stoppen met moeilijke vragen stellen. Dat is de brandstof. Van mycorrhiza-netwerken in de bodem tot hoe kleine details in belastingwetgeving door de maatschappij kunnen golven. je zal moeilijk een onderwerp vinden dat ons niet fascineert. Dit maakt ons goed in het vinden van nieuwe oplossingen, en in het overnemen van wat werkt in één domein en het toepassen in een compleet ander domein.",
+        text: "De klant brengt domeinkennis mee. Regelgeving, productie-eisen, marktcontext. Wat de klant ons kan uitleggen zou zot zijn om zelf te gaan uitzoeken. Dus daar beginnen we.",
       },
       {
         n: "02",
-        title: "Compounding",
-        text: "Wat je weet bepaalt wat je ziet. Wat je ziet bepaalt hoe je beslist. Hoe je beslist bepaalt wat je doet. Kennis telt niet gewoon op. Het compound. Elk project, elk domein, elke gestelde vraag onthult een diepere laag. We kijken altijd minstens één niveau verder dan het voor de hand liggende antwoord.",
+        text: "Wij duiken erin. Papers, naslagwerk, normen, materiaaleigenschappen. Niet oppervlakkig, maar tot we het begrijpen.",
       },
       {
         n: "03",
-        title: "Makers",
-        text: "Wij zijn bouwers. Nieuwe dingen uitvinden en in elkaar zetten is wat we het liefst doen. Het is waarom we ingenieurs werden en waarom we nu ontwerpers zijn. Door de jaren heen groeide niet alleen onze kennis maar ook ons machinepark. 3D-printers, een lasersnijder, een CNC-machine, een vacuümpomp, materialen voor handmatig gieten. Elk excuus is goed genoeg om een nieuwe machine of nieuw materiaal te kopen. Dit helpt ons snel te prototypen, vroeg te testen en te leren van onze fouten.",
+        text: "Waar nodig gaan we op zoek naar de juiste specialist. Niet iemand die alles half weet, maar de juiste persoon voor het juiste deelprobleem.",
       },
       {
         n: "04",
-        title: "Ook piloten",
-        text: "Je eigen ideeën zijn altijd de beste ideeën. Daarom hebben we ook onze eigen producten ontwikkeld, geproduceerd en op de markt gebracht. We weten wat erbij komt kijken. Niet uit een handboek, maar omdat we het gedaan hebben. We zijn niet alleen co-piloot geweest. We zijn ook piloot geweest.",
+        text: "Op een bepaald punt moet je iets maken. Pas dan weet je of je informatie klopt, of je aannames standhouden, en of je conclusies kloppen. Dat herhalen we tot het zeker is.",
       },
     ],
   },
