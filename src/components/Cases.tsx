@@ -45,10 +45,10 @@ export default function Cases() {
                   <button
                     key={proj.tab}
                     onClick={() => setActive(i)}
-                    className={`relative px-5 pt-3 pb-3 text-left flex-shrink-0 transition-all duration-200 rounded-t-lg border border-b-0 ${
+                    className={`relative px-6 pt-3.5 pb-3 text-left flex-shrink-0 transition-all duration-200 rounded-t-md border -mb-px ${
                       isActive
-                        ? "bg-orville-offwhite border-border -mb-px z-10"
-                        : "bg-transparent border-transparent hover:bg-black/[0.03]"
+                        ? "bg-orville-offwhite border-border border-b-orville-offwhite z-10"
+                        : "bg-black/[0.04] border-border border-b-border hover:bg-black/[0.06]"
                     }`}
                   >
                     <span
