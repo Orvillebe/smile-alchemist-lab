@@ -52,7 +52,7 @@ function CycleVisual({ labels: cycleLabels }: { labels: [string, string, string]
         path.setAttribute("transform", `rotate(${rotation})`);
         path.setAttribute("fill", "none");
         path.setAttribute("stroke", "hsl(var(--foreground))");
-        path.setAttribute("stroke-width", "1.5");
+        path.setAttribute("stroke-width", "2.2");
         path.setAttribute("stroke-linecap", "round");
         path.setAttribute("stroke-linejoin", "round");
         path.style.opacity = "0";
