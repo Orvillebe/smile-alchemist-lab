@@ -115,7 +115,7 @@ export const en: Translations = {
         problem:
           "How do you build reliable ventilation into a toilet seat people use daily, without electrical connection, at a consumer price point?",
         what: "Full product development from concept through prototyping to production-ready design. Mechanical engineering, airflow simulation, material selection, and DFM for thermoset compression moulding.",
-        why: "Dennis is honest and fair. He believes in building things locally, with people worth trusting. Making money, but not by stealing it from others.",
+        why: "Dennis is honest and fair. He believes in building things locally, with people worth trusting. He's making a product people enjoy, and he's making it properly. No corners cut to get the margin up.",
       },
       {
         tab: "iTrack",
