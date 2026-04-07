@@ -8,11 +8,11 @@ export default function Collaboration() {
 
   return (
     <section className="bg-orville-charcoal px-6 md:px-10 py-24">
-      <div className="max-w-[1200px] mx-auto relative">
+      <div className="max-w-[1200px] mx-auto">
         <Fade>
-          <Label className="mb-10 md:mb-0 md:absolute md:top-0 md:left-0">{t.collaboration.label}</Label>
+          <Label className="mb-10">{t.collaboration.label}</Label>
         </Fade>
-        <div className="md:pl-[200px]">
+        <div>
           <Fade delay={0.08}>
             <p className="font-heading text-[20px] md:text-[clamp(20px,2.4vw,24px)] font-normal text-orville-offwhite leading-[1.38] max-w-[860px] mb-6 tracking-tight">
               {parts.map((part, i) =>
