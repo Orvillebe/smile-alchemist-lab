@@ -90,7 +90,7 @@ export default function Hero() {
           </h1>
         </Fade>
         <Fade delay={0.65}>
-          <p className="font-body text-[17px] leading-[1.75] text-orville-mid max-w-[560px]">
+          <p className="font-body text-[17px] leading-[1.75] text-orville-offwhite/70 max-w-[560px]">
             {t.hero.body}
           </p>
         </Fade>
