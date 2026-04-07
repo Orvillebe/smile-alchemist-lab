@@ -39,7 +39,7 @@ export const nl: Translations = {
       {
         n: "03",
         title: "Ontwikkelen",
-        desc: "Van prototype tot productie. We blijven erbij tot het product maakbaar en schaalbaar is.",
+        desc: "Van prototype tot productie. We blijven erbij tot het maakbaar en schaalbaar is. Een model dat werkt op een scherm is makkelijk. Wij gaan door een hele reeks tussentijdse prototypes, zoeken steeds een manier om te testen, en draaien het liefst zelf de nulserie mee. Pas als het van een lijn rolt en nog steeds klopt, zijn we klaar.",
       },
     ],
     methodLabel: "Methode",
