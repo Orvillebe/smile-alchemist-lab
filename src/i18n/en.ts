@@ -34,7 +34,7 @@ export const en: Translations = {
       {
         n: "02",
         title: "Design",
-        desc: "Technical, functional, and aesthetic at once. Not sequentially. The solution must check all three, or it doesn't check out.",
+        desc: "Technical, functional, and aesthetic at once. Not sequentially. The solution must check all three, or it doesn't check out. That brings trade-offs, and we don't hide them. Beautiful design matters. But we make enough ourselves to know what happens when form wins over engineering: it gets expensive, it gets fragile, or it gets both.",
       },
       {
         n: "03",

@@ -34,7 +34,7 @@ export const nl: Translations = {
       {
         n: "02",
         title: "Ontwerpen",
-        desc: "Technisch, functioneel en esthetisch tegelijk. Niet na elkaar. De oplossing moet aan alle drie voldoen, of ze voldoet niet.",
+        desc: "Technisch, functioneel en esthetisch tegelijk. Niet na elkaar. De oplossing moet aan alle drie voldoen, of ze voldoet niet. Dat brengt trade-offs met zich mee, en die verzwijgen we niet. Mooi ontwerpen is belangrijk. Maar we maken zelf genoeg om te weten wat er gebeurt als vorm wint van techniek: het wordt duur, het wordt fragiel, of het wordt allebei.",
       },
       {
         n: "03",
