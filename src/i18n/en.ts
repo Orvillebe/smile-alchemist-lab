@@ -104,7 +104,7 @@ export const en: Translations = {
         tags: ["healthcare", "waterproof", "DFM"],
         problem:
           "A nurse call handset that needed to work in two orientations. Cable out the top when hanging, cable out the bottom when docked. Fully waterproof in both. Every configuration choice had to survive daily use in care environments.",
-        what: "Took a partially completed model and turned it into a customizable, waterproof, production-ready design. Full mechanical engineering, DFM, and manufacturer coordination.",
+        what: "Took a partially completed model and turned it into a customizable, waterproof, production-ready design. Full mechanical engineering, DFM, manufacturer coordination, and many rounds of waterproof testing with functional prototypes.",
         why: INDIGO_WHY,
       },
       {

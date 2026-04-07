@@ -104,7 +104,7 @@ export const nl: Translations = {
         tags: ["zorg", "waterdicht", "DFM"],
         problem:
           "Een verpleegoproephandset die in twee oriëntaties moest werken. Kabel bovenaan bij ophangen, kabel onderaan bij docken. Volledig waterdicht in beide gevallen. Elke configuratiekeuze moest dagelijks gebruik in zorgomgevingen overleven.",
-        what: "Een deels afgewerkt model genomen en omgezet naar een aanpasbaar, waterdicht, productierijp ontwerp. Volledige mechanische engineering, DFM en coördinatie met de fabrikant.",
+        what: "Een deels afgewerkt model genomen en omgezet naar een aanpasbaar, waterdicht, productierijp ontwerp. Volledige mechanische engineering, DFM, coördinatie met de fabrikant, en vele rondes waterdichte tests met functionele prototypes.",
         why: INDIGO_WHY,
       },
       {
