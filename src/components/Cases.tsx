@@ -96,9 +96,20 @@ export default function Cases() {
             <p className="font-mono text-xs text-orville-mid uppercase tracking-[1.5px] mb-2">
               {p.client}
             </p>
-            <h3 className="font-heading text-[clamp(24px,3vw,36px)] font-semibold text-foreground leading-tight tracking-tight mb-5">
+            <h3 className="font-heading text-[clamp(24px,3vw,36px)] font-semibold text-foreground leading-tight tracking-tight mb-3">
               {p.name}
             </h3>
+            {p.url && (
+              <a
+                href={p.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 font-mono text-[13px] text-orville-green hover:underline mb-5"
+              >
+                {p.url.replace(/^https?:\/\//, "")}
+                <span aria-hidden>&#8599;</span>
+              </a>
+            )}
             <div className="flex flex-wrap gap-2">
               {p.tags.map((tag) => (
                 <span

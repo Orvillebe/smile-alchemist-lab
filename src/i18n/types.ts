@@ -71,6 +71,7 @@ export interface Translations {
       problem: string;
       what: string;
       why: string;
+      url: string;
     }[];
   };
   expect: {

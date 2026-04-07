@@ -96,6 +96,7 @@ export const nl: Translations = {
           "Stofzuigers sterven als geheel wanneer één onderdeel faalt. Het echte afval is niet het kapotte onderdeel, maar de perfect functionerende onderdelen die ermee worden weggegooid.",
         what: "Een modulaire stofzuigerbehuizing ontworpen waarbij elk onderdeel onafhankelijk vervangen kan worden. Voor we aan productie begonnen, bouwden we Model 1 als DIY-kit en verkochten het. Echte gebruikers, echte huizen, echte data over wat technisch, functioneel en als business werkt. Die kits worden nu geleverd. Alles wat we leren vloeit rechtstreeks door naar Model 2, de productieversie.",
         why: "Recht op reparatie. Een wereld opkuisen die door anderen is vervuild. Dat anderen winst maken uit vervuiling betekent niet dat wij dat ook moeten doen.",
+        url: "https://www.fairvacuum.com",
       },
       {
         tab: "Multimedia Handset",
@@ -106,6 +107,7 @@ export const nl: Translations = {
           "Een verpleegoproephandset die in twee oriëntaties moest werken. Kabel bovenaan bij ophangen, kabel onderaan bij docken. Volledig waterdicht in beide gevallen. Bovendien moet de batterij vervangbaar zijn zonder gereedschap of lijm, en de behuizing moet waterdicht blijven na elke wissel. Elke configuratiekeuze moest dagelijks gebruik in zorgomgevingen overleven.",
         what: "Een deels afgewerkt model genomen en omgezet naar een aanpasbaar, waterdicht, productierijp ontwerp. Volledige mechanische engineering, DFM, coördinatie met de fabrikant, en vele rondes waterdichte tests met functionele prototypes.",
         why: INDIGO_WHY,
+        url: "https://www.indigocare.com/multimedia-handset",
       },
       {
         tab: "PURE-D",
@@ -116,6 +118,7 @@ export const nl: Translations = {
           "Hoe bouw je betrouwbare ventilatie in een toiletbril die mensen dagelijks gebruiken, zonder elektrische aansluiting, tegen een consumentenprijs?",
         what: "Volledige productontwikkeling van concept tot prototyping tot productierijp ontwerp. Mechanische engineering, luchtstromsimulatie, materiaalkeuze en DFM voor thermoset compressiemoulding.",
         why: "Dennis is eerlijk en fair. Hij gelooft in lokaal bouwen, met mensen die je kan vertrouwen. Hij maakt een product waar mensen van genieten, en hij maakt het goed. Geen hoeken afgesneden om de marge op te krikken.",
+        url: "https://www.denck.eu",
       },
       {
         tab: "iTrack",
@@ -126,6 +129,7 @@ export const nl: Translations = {
           "Drie draadloze technologieën moeten samenleven in één behuizing die klein genoeg is voor om de pols, robuust genoeg voor dagelijks gebruik in de zorg, en waterdicht. Bovendien moet de batterij verwisselbaar zijn zonder gereedschap of kleefmiddelen, en de behuizing moet waterdicht blijven na elke wissel.",
         what: "Een compacte behuizing ontworpen die drie draadloze technologieën integreert. Een gereedschapvrij batterijwisselmechanisme ontwikkeld dat de waterdichte afdichting behoudt. Volledig mechanisch ontwerp, waterdichtheidsstrategie, comforttesting en productierijpe CAD.",
         why: INDIGO_WHY,
+        url: "https://www.indigocare.com/itrack-wireless-nurse-call",
       },
       {
         tab: "iCall 2",
@@ -136,6 +140,7 @@ export const nl: Translations = {
           "Zorgapparatuur wordt vervangen, niet hersteld. Hoe herontwerp je een volledige productreeks zodat veldondersteuning het ter plaatse kan repareren, met minder onderdelen, minder materialen en gedeelde behuizingen over modellen heen. terwijl het platform open blijft voor toekomstige upgrades?",
         what: "De volledige productreeks herontworpen rond modulariteit en upgradeerbaarheid. Gedeelde behuizingen over modellen heen, minder onderdelen, ontworpen voor reparatie ter plaatse door ondersteuningspersoneel, en een open architectuur die toekomstige modules opvangt zonder herontwerp.",
         why: INDIGO_WHY,
+        url: "https://www.indigocare.com/icall2",
       },
       {
         tab: "Foote",
@@ -146,6 +151,7 @@ export const nl: Translations = {
           "Een draagbaar scherm heeft een standaard nodig. Elke standaard is een apart stuk dat je vergeet, verliest of mee worstelt. Kan de standaard gewoon deel uitmaken van het scherm, en ergonomisch genoeg zijn voor dagelijks gebruik?",
         what: "Volledige productontwikkeling en go-to-market. Van eerste schets tot verzendlabel. Mechanisch ontwerp, ergonomische positionering, materiaalkeuze (bamboe), scharniertechniek, verpakking en productiecoördinatie.",
         why: "We wilden bewijzen dat we een product van concept tot markt konden brengen. Niet adviseren, doen. Van de eerste schets tot het verzendlabel.",
+        url: "https://www.foote.be",
       },
     ],
   },
