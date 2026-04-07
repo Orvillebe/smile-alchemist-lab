@@ -94,7 +94,7 @@ export const en: Translations = {
         tags: ["circular", "modular", "e-waste", "universal"],
         problem:
           "Vacuum cleaners die as a unit when one component fails. The real waste isn't the broken part, it's the perfectly functional parts that get thrown away with it.",
-        what: "Designed a modular vacuum housing that allows individual components to be replaced independently. Developed the snap-fit system, material selection for recycled plastics, and full production-ready CAD. From problem definition through prototyping to manufacture-ready.",
+        what: "Designed a modular vacuum housing where every component can be replaced independently. Before committing to production, we built Model 1 as a DIY kit and sold it. Real users, real homes, real data on what works technically, functionally, and as a business. Those kits are being delivered now. Everything we learn feeds straight into Model 2, the production version.",
         why: "Right to repair. Cleaning up a world dirtied by others. That others profit from pollution doesn't mean we should too.",
       },
       {
