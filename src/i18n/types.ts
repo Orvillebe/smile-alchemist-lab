@@ -76,7 +76,9 @@ export interface Translations {
   };
   expect: {
     label: string;
-    items: { n: string; title: string; text: string }[];
+    heading: string;
+    paragraphs: string[];
+    steps: { n: string; text: string }[];
   };
   name: {
     label: string;

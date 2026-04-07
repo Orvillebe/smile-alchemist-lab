@@ -156,27 +156,28 @@ export const en: Translations = {
     ],
   },
   expect: {
-    label: "Typically Orville",
-    items: [
+    label: "New territory",
+    heading: "We haven't done everything before but we're very good at figuring things out.",
+    paragraphs: [
+      "FairVacuum was a domain we didn't know. The waterproof housing without screws a problem we had never solved before. That's the point of innovating.",
+      "We develop new products. If we had done it before, there would be nothing new about it.",
+    ],
+    steps: [
       {
         n: "01",
-        title: "Curious by default",
-        text: "Broad knowledge, genuine curiosity about how things really work, and a refusal to stop asking difficult questions. That's the fuel. From mycorrhiza networks in soil to how small details in tax legislation can ripple through society, you'll struggle to find a subject that doesn't fascinate us. This means we're good at finding new solutions, and at taking what works in one domain and applying it in a completely different one.",
+        text: "The client brings domain knowledge. Regulations, production requirements, market context. What the client can explain to us would be crazy to go figure out ourselves. So we start there.",
       },
       {
         n: "02",
-        title: "Compounding",
-        text: "What you know shapes what you see. What you see shapes how you decide. How you decide shapes what you do. Knowledge doesn't just add up. It compounds. Each project, each field, each question asked reveals a deeper layer. We always look at least one level further than the obvious answer.",
+        text: "We dive in. Papers, reference works, standards, material properties. Not superficially, but until we understand it.",
       },
       {
         n: "03",
-        title: "Makers",
-        text: "We are builders. Inventing new things and putting them together is what we love most. It's why we became engineers and why we're designers now. Over the years, not just our skills grew but also our machine park. 3D printers, a laser cutter, a CNC machine, a vacuum pump, materials for hand casting. Any excuse is good enough to buy a new machine or new materials. This helps us prototype fast, test early, and learn from our mistakes.",
+        text: "Where needed, we find the right specialist. Not someone who knows everything halfway, but the right person for the right sub-problem.",
       },
       {
         n: "04",
-        title: "Pilots too",
-        text: "Your own ideas are always the best ideas. That's why we've also developed, produced, and brought our own products to market. We know what's involved. Not from a textbook, but because we've done it. We haven't just been co-pilot. We've been pilot too.",
+        text: "At some point you have to make something. Only then do you know if your information is correct, if your assumptions hold, and if your conclusions are right. We repeat that until it's certain.",
       },
     ],
   },
