@@ -37,23 +37,24 @@ export default function Cases() {
         </Fade>
 
         <Fade delay={0.1}>
-          <div className="flex gap-0 overflow-x-auto mb-16">
-            <div className="flex items-end border-b border-border w-full">
+          <div className="mb-16 overflow-x-auto">
+            <div role="tablist" className="flex items-end min-w-max border-b border-border">
               {projects.map((proj, i) => {
                 const isActive = active === i;
                 return (
                   <button
                     key={proj.tab}
+                    role="tab"
+                    aria-selected={isActive}
                     onClick={() => setActive(i)}
-                    aria-pressed={isActive}
-                    className={`relative px-6 pt-4 pb-3 text-left flex-shrink-0 transition-all duration-200 rounded-t-md border -mb-px ${
+                    className={`relative -mb-px px-7 pt-4 pb-3 text-left flex-shrink-0 rounded-t-[16px] border transition-all duration-200 ${
                       isActive
-                        ? "bg-background border-border border-b-background z-10 shadow-[0_-1px_0_0_hsl(var(--border)),0_10px_24px_-16px_hsl(var(--foreground)/0.35)]"
-                        : "bg-black/[0.04] border-border border-b-border hover:bg-black/[0.07] opacity-75"
+                        ? "z-10 bg-orville-offwhite border-border border-b-orville-offwhite shadow-[0_-1px_0_0_hsl(var(--border))]"
+                        : "mt-3 bg-muted/30 border-border hover:bg-muted/45"
                     }`}
                   >
                     <span
-                      className={`absolute left-0 right-0 top-0 h-[3px] rounded-t-md transition-colors duration-200 ${
+                      className={`absolute left-0 right-0 top-0 h-[3px] rounded-t-[16px] transition-colors duration-200 ${
                         isActive ? "bg-orville-green" : "bg-transparent"
                       }`}
                     />
@@ -61,14 +62,14 @@ export default function Cases() {
                       className={`font-heading text-[15px] block leading-snug transition-colors duration-200 ${
                         isActive
                           ? "font-semibold text-foreground"
-                          : "font-normal text-orville-mid"
+                          : "font-normal text-foreground/70"
                       }`}
                     >
                       {proj.tab}
                     </span>
                     <span
                       className={`font-mono text-[11px] tracking-[0.04em] block mt-0.5 transition-colors duration-200 ${
-                        isActive ? "text-orville-green" : "text-orville-mid/60"
+                        isActive ? "text-orville-green" : "text-foreground/45"
                       }`}
                     >
                       {proj.client}
