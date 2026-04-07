@@ -94,7 +94,7 @@ export const nl: Translations = {
         tags: ["circulair", "modulair", "e-waste", "universeel"],
         problem:
           "Stofzuigers sterven als geheel wanneer één onderdeel faalt. Het echte afval is niet het kapotte onderdeel, maar de perfect functionerende onderdelen die ermee worden weggegooid.",
-        what: "Een modulaire stofzuigerbehuizing ontworpen waarmee individuele componenten onafhankelijk vervangen kunnen worden. Het snap-fit systeem, materiaalkeuze voor gerecyclede kunststoffen en volledige productierijpe CAD ontwikkeld. Van probleemstelling tot prototype tot productierijp.",
+        what: "Een modulaire stofzuigerbehuizing ontworpen waarbij elk onderdeel onafhankelijk vervangen kan worden. Voor we aan productie begonnen, bouwden we Model 1 als DIY-kit en verkochten het. Echte gebruikers, echte huizen, echte data over wat technisch, functioneel en als business werkt. Die kits worden nu geleverd. Alles wat we leren vloeit rechtstreeks door naar Model 2, de productieversie.",
         why: "Recht op reparatie. Een wereld opkuisen die door anderen is vervuild. Dat anderen winst maken uit vervuiling betekent niet dat wij dat ook moeten doen.",
       },
       {
