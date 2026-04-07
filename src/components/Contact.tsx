@@ -23,7 +23,7 @@ export default function Contact() {
         <Fade delay={0.16}>
           <div className="mt-14 pt-10 border-t border-white/[0.12]">
             <Label variant="green" className="mb-5">{t.contact.expectLabel}</Label>
-            <p className="font-body text-[clamp(16px,1.4vw,20px)] leading-[1.65] text-orville-mid max-w-[720px] mb-10">
+            <p className="font-body text-lg leading-[1.7] text-orville-offwhite/85 max-w-[720px] mb-10">
               {t.contact.expectBody}
             </p>
             <a
