@@ -83,6 +83,8 @@ export interface Translations {
     label: string;
     heading: string;
     body: string;
+    expectLabel: string;
+    expectBody: string;
     footer: string;
     copyright: string;
   };

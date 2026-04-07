@@ -180,7 +180,9 @@ export const en: Translations = {
   contact: {
     label: "Contact",
     heading: "Let's talk.",
-    body: "For complex product development where circularity, modularity, or technical feasibility are central. Whether you know exactly what you need or have a nagging feeling the problem hasn't been defined yet. That's a conversation worth having.",
+    body: "For complete product development where circularity, repairability, or technical feasibility are central. Not sure yet where you stand? A conversation usually clarifies that quickly.",
+    expectLabel: "What to expect",
+    expectBody: "Block half an hour. Most people stay longer because the subject gets interesting. No obligations, no intake procedure.",
     footer: "Orville BV — Kortessem, Belgium",
     copyright: "© 2026",
   },
