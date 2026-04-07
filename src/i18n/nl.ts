@@ -29,7 +29,7 @@ export const nl: Translations = {
       {
         n: "01",
         title: "Ontleden",
-        desc: "Elk project begint met het kernprobleem. We strippen aannames weg tot we weten wat we écht moeten oplossen.",
+        desc: "Elk project begint met het kernprobleem. We strippen aannames weg tot we weten wat we écht moeten oplossen. We hebben niet alles eerder gedaan. We zijn goed in uitzoeken. Wat de klant ons kan uitleggen zou zot zijn om zelf te gaan uitzoeken. Dus daar beginnen we. Daarna doen we de rest.",
       },
       {
         n: "02",

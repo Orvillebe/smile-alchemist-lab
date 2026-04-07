@@ -29,7 +29,7 @@ export const en: Translations = {
       {
         n: "01",
         title: "Dissect",
-        desc: "Every project starts with the core problem. We strip away assumptions until we know what we really need to solve.",
+        desc: "Every project starts with the core problem. We strip away assumptions until we know what we really need to solve. We haven't done everything before. We're good at figuring things out. What the client can explain to us would be crazy to go figure out ourselves. So we start there. Then we do the rest.",
       },
       {
         n: "02",
