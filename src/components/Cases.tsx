@@ -45,12 +45,18 @@ export default function Cases() {
                   <button
                     key={proj.tab}
                     onClick={() => setActive(i)}
-                    className={`relative px-6 pt-3.5 pb-3 text-left flex-shrink-0 transition-all duration-200 rounded-t-md border -mb-px ${
+                    aria-pressed={isActive}
+                    className={`relative px-6 pt-4 pb-3 text-left flex-shrink-0 transition-all duration-200 rounded-t-md border -mb-px ${
                       isActive
-                        ? "bg-orville-offwhite border-border border-b-orville-offwhite z-10"
-                        : "bg-black/[0.04] border-border border-b-border hover:bg-black/[0.06]"
+                        ? "bg-background border-border border-b-background z-10 shadow-[0_-1px_0_0_hsl(var(--border)),0_10px_24px_-16px_hsl(var(--foreground)/0.35)]"
+                        : "bg-black/[0.04] border-border border-b-border hover:bg-black/[0.07] opacity-75"
                     }`}
                   >
+                    <span
+                      className={`absolute left-0 right-0 top-0 h-[3px] rounded-t-md transition-colors duration-200 ${
+                        isActive ? "bg-orville-green" : "bg-transparent"
+                      }`}
+                    />
                     <span
                       className={`font-heading text-[15px] block leading-snug transition-colors duration-200 ${
                         isActive
