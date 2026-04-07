@@ -103,7 +103,7 @@ export const nl: Translations = {
         name: "Multimedia Handset",
         tags: ["zorg", "waterdicht", "DFM"],
         problem:
-          "Hoe neem je een mooie schets en een deels afgewerkt model en maak je er iets van dat aanpasbaar, waterdicht en productierijp is?",
+          "Een verpleegoproephandset die in twee oriëntaties moest werken. Kabel bovenaan bij ophangen, kabel onderaan bij docken. Volledig waterdicht in beide gevallen. Elke configuratiekeuze moest dagelijks gebruik in zorgomgevingen overleven.",
         what: "Een deels afgewerkt model genomen en omgezet naar een aanpasbaar, waterdicht, productierijp ontwerp. Volledige mechanische engineering, DFM en coördinatie met de fabrikant.",
         why: INDIGO_WHY,
       },

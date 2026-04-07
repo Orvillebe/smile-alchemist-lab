@@ -103,7 +103,7 @@ export const en: Translations = {
         name: "Multimedia Handset",
         tags: ["healthcare", "waterproof", "DFM"],
         problem:
-          "How do you take a beautiful sketch and a partially completed model and turn it into something customizable, waterproof, and ready for production?",
+          "A nurse call handset that needed to work in two orientations. Cable out the top when hanging, cable out the bottom when docked. Fully waterproof in both. Every configuration choice had to survive daily use in care environments.",
         what: "Took a partially completed model and turned it into a customizable, waterproof, production-ready design. Full mechanical engineering, DFM, and manufacturer coordination.",
         why: INDIGO_WHY,
       },
