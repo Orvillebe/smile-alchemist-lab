@@ -14,11 +14,6 @@ export default function People() {
             {t.people.heading}
           </h2>
         </Fade>
-        <Fade delay={0.1}>
-          <p className="font-body text-[15px] leading-[1.7] text-orville-mid">
-            {t.people.body}
-          </p>
-        </Fade>
       </div>
     </section>
   );
