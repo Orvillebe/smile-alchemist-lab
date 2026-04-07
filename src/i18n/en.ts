@@ -169,11 +169,11 @@ export const en: Translations = {
       },
       {
         n: "02",
-        text: "We dive in. Papers, reference works, standards, material properties. Not superficially, but until we understand it.",
+        text: "We dive in. Papers, reference works, standards, material properties. Not superficially, but until we understand it and can work with it.",
       },
       {
         n: "03",
-        text: "Where needed, we find the right specialist. Not someone who knows everything halfway, but the right person for the right sub-problem.",
+        text: "Where needed (such as specific legislation), we find the right specialist. Not someone who knows everything halfway, but the right person for the right sub-problem.",
       },
       {
         n: "04",
