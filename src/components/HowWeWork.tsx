@@ -6,7 +6,7 @@ import { useLanguage } from "@/i18n/LanguageContext";
 export default function HowWeWork() {
   const { t } = useLanguage();
   return (
-    <section id="how-we-work" className="bg-orville-offwhite px-6 md:px-10 py-24">
+    <section className="bg-orville-offwhite px-6 md:px-10 py-24">
       <div className="max-w-[1200px] mx-auto">
         <Fade>
           <Label className="mb-10">{t.howWeWork.label}</Label>
