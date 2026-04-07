@@ -10,12 +10,12 @@ export default function People() {
           <Label className="mb-10">{t.people.label}</Label>
         </Fade>
         <Fade delay={0.05}>
-          <h2 className="font-heading font-semibold text-foreground text-[clamp(28px,3.5vw,42px)] leading-[1.25] mb-6 tracking-tight max-w-[720px]">
+          <h2 className="font-heading font-semibold text-foreground text-[clamp(28px,3.5vw,42px)] leading-[1.25] mb-6 tracking-tight">
             {t.people.heading}
           </h2>
         </Fade>
         <Fade delay={0.1}>
-          <p className="font-body text-[15px] leading-[1.7] text-orville-mid max-w-[640px]">
+          <p className="font-body text-[15px] leading-[1.7] text-orville-mid">
             {t.people.body}
           </p>
         </Fade>
