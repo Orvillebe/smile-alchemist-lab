@@ -17,9 +17,8 @@ export default function Studio() {
             />
           </Fade>
           <Fade delay={0.1}>
-            <p className="font-heading font-medium text-xl leading-[1.5] text-foreground">
-              {t.studio.together}{" "}
-              <span className="text-orville-mid text-base">{t.studio.founded}</span>
+            <p className="font-body text-[15px] leading-[1.7] text-orville-mid">
+              {t.people.body}
             </p>
           </Fade>
         </div>
@@ -59,6 +58,13 @@ export default function Studio() {
             </div>
           </Fade>
         </div>
+
+        <Fade delay={0.3}>
+          <p className="font-heading font-medium text-xl leading-[1.5] max-w-[640px] text-foreground mt-12 md:mt-[72px]">
+            {t.studio.together}{" "}
+            <span className="text-orville-mid text-base">{t.studio.founded}</span>
+          </p>
+        </Fade>
 
       </div>
     </section>
