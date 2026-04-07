@@ -55,10 +55,14 @@ export const en: Translations = {
     copilot: "co-pilot",
     body: "Where possible, a day per week at your location. This isn't a courtesy visit. It strengthens communication, sharpens decisions, and makes sure nothing gets lost in translation between meetings.",
   },
+  people: {
+    label: "The people",
+    heading: "The people who do the presentation are the people who solve the problem.",
+    body: "No handoff. No junior team behind the scenes. Just two people. A deliberate maximum of four projects at a time. The engineers you talk to are the engineers who do the work.",
+  },
   studio: {
     label: "The people",
-    heading:
-      "The people who do the presentation are the people who solve the problem.",
+    heading: "The people who do the presentation are the people who solve the problem.",
     subtitle: "No handoff. No junior team behind the scenes.",
     an: {
       name: "An Pirlot",
