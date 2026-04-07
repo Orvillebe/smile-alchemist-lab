@@ -123,7 +123,7 @@ export const nl: Translations = {
         name: "iTrack armband",
         tags: ["zorg", "wearable", "waterdicht", "gereedschapvrije batterijwissel"],
         problem:
-          "Drie draadloze technologieën moeten samenleven in één behuizing die klein genoeg is voor om de pols, robuust genoeg voor dagelijks gebruik in de zorg, en waterdicht. Bovendien moet de batterij verwisselbaar zijn zonder gereedschap of kleefmiddelen. en de behuizing moet waterdicht blijven na elke wissel.",
+          "Drie draadloze technologieën moeten samenleven in één behuizing die klein genoeg is voor om de pols, robuust genoeg voor dagelijks gebruik in de zorg, en waterdicht. Bovendien moet de batterij verwisselbaar zijn zonder gereedschap of kleefmiddelen, en de behuizing moet waterdicht blijven na elke wissel.",
         what: "Een compacte behuizing ontworpen die drie draadloze technologieën integreert. Een gereedschapvrij batterijwisselmechanisme ontwikkeld dat de waterdichte afdichting behoudt. Volledig mechanisch ontwerp, waterdichtheidsstrategie, comforttesting en productierijpe CAD.",
         why: INDIGO_WHY,
       },
@@ -143,9 +143,9 @@ export const nl: Translations = {
         name: "Foote",
         tags: ["eigen product", "ergonomisch", "bamboe", "draagbaar"],
         problem:
-          "Een draagbaar scherm heeft een standaard nodig. Elke standaard is een apart stuk dat je vergeet, verliest of mee worstelt. Kan de standaard gewoon deel uitmaken van het scherm. en ergonomisch genoeg zijn voor dagelijks gebruik?",
+          "Een draagbaar scherm heeft een standaard nodig. Elke standaard is een apart stuk dat je vergeet, verliest of mee worstelt. Kan de standaard gewoon deel uitmaken van het scherm, en ergonomisch genoeg zijn voor dagelijks gebruik?",
         what: "Volledige productontwikkeling en go-to-market. Van eerste schets tot verzendlabel. Mechanisch ontwerp, ergonomische positionering, materiaalkeuze (bamboe), scharniertechniek, verpakking en productiecoördinatie.",
-        why: "We wilden bewijzen dat we een product van concept tot markt konden brengen. Niet adviseren. doen. Van de eerste schets tot het verzendlabel.",
+        why: "We wilden bewijzen dat we een product van concept tot markt konden brengen. Niet adviseren, doen. Van de eerste schets tot het verzendlabel.",
       },
     ],
   },
@@ -210,28 +210,28 @@ export const nl: Translations = {
     back: "Terug",
     heading: "Ons proces en onze methode",
     intro:
-      "Elk project is anders. Maar de manier waarop we erover nadenken niet. Zo werken we. van eerste gesprek tot productie.",
+      "Elk project is anders. Maar de manier waarop we erover nadenken niet. Zo werken we, van eerste gesprek tot productie.",
     phasesLabel: "De fases",
     phases: [
       {
         n: "01",
         title: "Het probleem begrijpen",
-        text: "Voor we één lijn trekken, zorgen we dat we het juiste probleem oplossen. We challengen de briefing, stellen oncomfortabele vragen en graven in wat er écht aan de hand is. De modulariteitsvraag die eigenlijk over herstelbaarheid gaat. De materialenvraag die eigenlijk over het businessmodel gaat. We slaan deze stap niet over. hierop is al de rest gebouwd.",
+        text: "Voor we één lijn trekken, zorgen we dat we het juiste probleem oplossen. We challengen de briefing, stellen oncomfortabele vragen en graven in wat er écht aan de hand is. De modulariteitsvraag die eigenlijk over herstelbaarheid gaat. De materialenvraag die eigenlijk over het businessmodel gaat. We slaan deze stap niet over: hierop is al de rest gebouwd.",
       },
       {
         n: "02",
         title: "Verkennen en definiëren",
-        text: "Als het probleem helder is, verkennen we breed voor we versmallen. Concepten, schetsen, ruwe modellen. snel en goedkoop. We zoeken niet het eerste goede idee, we zoeken de beste richting. Deze fase eindigt met een heldere definitie van wat we bouwen en waarom.",
+        text: "Als het probleem helder is, verkennen we breed voor we versmallen. Concepten, schetsen, ruwe modellen, snel en goedkoop. We zoeken niet het eerste goede idee, we zoeken de beste richting. Deze fase eindigt met een heldere definitie van wat we bouwen en waarom.",
       },
       {
         n: "03",
         title: "Maken, testen, leren, herhalen",
-        text: "We bouwen iets, testen het, leren ervan en doen het opnieuw. Ons eigen atelier, onze eigen machines. 3D-printers, lasersnijders, CNC, gieten. Elke iteratie maakt het product scherper en de aannames minder. Dit is geen fase. Het is hoe elke fase werkt.",
+        text: "We bouwen iets, testen het, leren ervan en doen het opnieuw. Ons eigen atelier, onze eigen machines: 3D-printers, lasersnijders, CNC, gieten. Elke iteratie maakt het product scherper en de aannames minder. Dit is geen fase. Het is hoe elke fase werkt.",
       },
       {
         n: "04",
         title: "Detailleren en engineeren",
-        text: "Als het concept bewezen is, engineeren we het voor productie. Materiaalkeuze, toleranties, assemblagelogica, DFM. We denken na over wie het bouwt, hoe het wordt geassembleerd en wat er gebeurt als er iets misgaat in het veld. Elk detail is een beslissing. we nemen ze bewust.",
+        text: "Als het concept bewezen is, engineeren we het voor productie. Materiaalkeuze, toleranties, assemblagelogica, DFM. We denken na over wie het bouwt, hoe het wordt geassembleerd en wat er gebeurt als er iets misgaat in het veld. Elk detail is een beslissing, en we nemen ze bewust.",
       },
       {
         n: "05",
@@ -243,7 +243,7 @@ export const nl: Translations = {
     principles: [
       {
         title: "Co-piloot, geen consultant",
-        text: "We werken naast je. waar mogelijk een dag per week bij jou op locatie. Je blijft betrokken bij elke stap. Je kennis groeit mee met het project, zodat je onderweg beter geïnformeerde beslissingen kan nemen.",
+        text: "We werken naast je, waar mogelijk een dag per week bij jou op locatie. Je blijft betrokken bij elke stap. Je kennis groeit mee met het project, zodat je onderweg beter geïnformeerde beslissingen kan nemen.",
       },
       {
         title: "Het sneeuwbaleffect",
