@@ -37,36 +37,40 @@ export default function Cases() {
         </Fade>
 
         <Fade delay={0.1}>
-          <div className="flex gap-0 overflow-x-auto border-b border-border mb-16">
-            {projects.map((proj, i) => (
-              <button
-                key={proj.tab}
-                onClick={() => setActive(i)}
-                className="px-0 pr-10 pb-4 text-left flex-shrink-0 relative transition-colors duration-200"
-              >
-                <span
-                  className={`font-heading text-[15px] block leading-snug transition-colors duration-200 ${
-                    active === i
-                      ? "font-semibold text-foreground"
-                      : "font-normal text-orville-mid"
-                  }`}
-                >
-                  {proj.tab}
-                </span>
-                <span
-                  className={`font-mono text-[11px] tracking-[0.04em] block mt-0.5 transition-colors duration-200 ${
-                    active === i ? "text-orville-green" : "text-orville-mid/60"
-                  }`}
-                >
-                  {proj.client}
-                </span>
-                <span
-                  className={`absolute bottom-0 left-0 right-10 h-[2px] transition-all duration-200 ${
-                    active === i ? "bg-foreground" : "bg-transparent"
-                  }`}
-                />
-              </button>
-            ))}
+          <div className="flex gap-0 overflow-x-auto mb-16">
+            <div className="flex items-end border-b border-border w-full">
+              {projects.map((proj, i) => {
+                const isActive = active === i;
+                return (
+                  <button
+                    key={proj.tab}
+                    onClick={() => setActive(i)}
+                    className={`relative px-5 pt-3 pb-3 text-left flex-shrink-0 transition-all duration-200 rounded-t-lg border border-b-0 ${
+                      isActive
+                        ? "bg-orville-offwhite border-border -mb-px z-10"
+                        : "bg-transparent border-transparent hover:bg-black/[0.03]"
+                    }`}
+                  >
+                    <span
+                      className={`font-heading text-[15px] block leading-snug transition-colors duration-200 ${
+                        isActive
+                          ? "font-semibold text-foreground"
+                          : "font-normal text-orville-mid"
+                      }`}
+                    >
+                      {proj.tab}
+                    </span>
+                    <span
+                      className={`font-mono text-[11px] tracking-[0.04em] block mt-0.5 transition-colors duration-200 ${
+                        isActive ? "text-orville-green" : "text-orville-mid/60"
+                      }`}
+                    >
+                      {proj.client}
+                    </span>
+                  </button>
+                );
+              })}
+            </div>
           </div>
         </Fade>
 
