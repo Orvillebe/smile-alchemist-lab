@@ -8,25 +8,19 @@ export default function Studio() {
     <section className="bg-background px-6 md:px-10 pb-16 md:pb-[100px]">
       <div className="max-w-[1200px] mx-auto">
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-end mb-12 md:mb-[72px]">
-          <div>
-            <Fade delay={0.05}>
-              <h2 className="font-heading font-semibold text-foreground text-[clamp(28px,3.5vw,42px)] leading-[1.25] mb-3 tracking-tight">
-                {t.studio.heading}
-              </h2>
-            </Fade>
-            <Fade delay={0.1}>
-              <p className="font-mono text-sm text-orville-mid">
-                {t.studio.subtitle}
-              </p>
-            </Fade>
-          </div>
-          <Fade delay={0.15}>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-start mb-12 md:mb-[72px]">
+          <Fade delay={0.05}>
             <img
               src={teamPhoto}
               alt="An Pirlot and Vincent Ramaekers at work"
               className="w-full rounded aspect-[3/2] object-cover"
             />
+          </Fade>
+          <Fade delay={0.1}>
+            <p className="font-heading font-medium text-xl leading-[1.5] text-foreground">
+              {t.studio.together}{" "}
+              <span className="text-orville-mid text-base">{t.studio.founded}</span>
+            </p>
           </Fade>
         </div>
 
@@ -66,12 +60,6 @@ export default function Studio() {
           </Fade>
         </div>
 
-        <Fade delay={0.3}>
-          <p className="font-heading font-medium text-xl leading-[1.5] max-w-[640px] text-foreground mt-12 md:mt-[72px]">
-            {t.studio.together}{" "}
-            <span className="text-orville-mid text-base">{t.studio.founded}</span>
-          </p>
-        </Fade>
       </div>
     </section>
   );
