@@ -44,8 +44,8 @@ function CycleVisual({ labels: cycleLabels }: { labels: [string, string, string]
       const strokes: SVGPathElement[] = [];
       for (let i = 0; i < NUM_STROKES; i++) {
         const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
-        const radiusOffset = (i - NUM_STROKES / 2) * 1.4 + Math.sin(i * 1.3) * 2;
-        const rotation = (i - NUM_STROKES / 2) * 1.4 + Math.sin(i * 0.9) * 1.5;
+        const radiusOffset = (i - NUM_STROKES / 2) * 0.9 + Math.sin(i * 1.3) * 1.2;
+        const rotation = (i - NUM_STROKES / 2) * 0.9 + Math.sin(i * 0.9) * 1;
         const seed = i * 2.3;
         const d = makeWobbleCircle(BASE_RADIUS + radiusOffset, WOBBLE + (i % 5) * 1, seed);
         path.setAttribute("d", d);
