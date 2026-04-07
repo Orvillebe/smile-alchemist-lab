@@ -115,7 +115,7 @@ export const nl: Translations = {
         problem:
           "Hoe bouw je betrouwbare ventilatie in een toiletbril die mensen dagelijks gebruiken, zonder elektrische aansluiting, tegen een consumentenprijs?",
         what: "Volledige productontwikkeling van concept tot prototyping tot productierijp ontwerp. Mechanische engineering, luchtstromsimulatie, materiaalkeuze en DFM voor thermoset compressiemoulding.",
-        why: "Dennis is eerlijk en fair. Hij gelooft in lokaal bouwen, met mensen die je kan vertrouwen. Geld verdienen, maar niet door het van anderen te stelen.",
+        why: "Dennis is eerlijk en fair. Hij gelooft in lokaal bouwen, met mensen die je kan vertrouwen. Hij maakt een product waar mensen van genieten, en hij maakt het goed. Geen hoeken afgesneden om de marge op te krikken.",
       },
       {
         tab: "iTrack",
