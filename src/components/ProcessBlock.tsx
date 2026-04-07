@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Fade, Label } from "./Fade";
 import { useLanguage } from "@/i18n/LanguageContext";
 
-const NUM_STROKES = 20;
+const NUM_STROKES = 40;
 const BASE_RADIUS = 80;
 const WOBBLE = 6;
 const STROKE_DRAW_DURATION = 350;
