@@ -181,12 +181,6 @@ export default function ProcessBlock() {
                 <p className="font-body text-sm leading-[1.65] text-orville-mid mb-6">
                   {t.process.methodBody}
                 </p>
-                <Link
-                  to="/process"
-                  className="font-mono text-[13px] text-orville-green tracking-[0.04em] hover:underline"
-                >
-                  {t.process.methodLink}
-                </Link>
               </div>
             </div>
           </Fade>

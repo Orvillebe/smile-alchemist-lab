@@ -27,10 +27,10 @@ export default function Contact() {
               {t.contact.expectBody}
             </p>
             <a
-              href="mailto:hello@orville.be"
+              href="mailto:info@orville.be"
               className="font-heading text-[22px] font-medium text-orville-green border-b border-orville-green/40 hover:border-orville-green transition-colors duration-300 pb-1"
             >
-              hello@orville.be
+              info@orville.be
             </a>
           </div>
         </Fade>
