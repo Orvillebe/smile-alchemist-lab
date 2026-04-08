@@ -127,7 +127,7 @@ export const en: Translations = {
         tags: ["healthcare", "wearable", "waterproof", "tool-free battery swap"],
         problem:
           "Three wireless technologies need to coexist in one housing small enough to wear on a wrist, robust enough for daily use in healthcare, and waterproof. On top of that, the battery must be replaceable without tools or adhesives, and the housing must remain watertight after every swap.",
-        what: "Designed a compact housing integrating three wireless technologies. Engineered a tool-free battery replacement mechanism that maintains the waterproof seal. Full mechanical design, waterproofing strategy, comfort testing, and production-ready CAD.",
+        what: "Designed a compact housing with a tool-free battery replacement mechanism that maintains the waterproof seal after every swap. Full mechanical design, waterproofing strategy, comfort testing, waterproof testing with functional prototypes, and production-ready CAD.",
         why: INDIGO_WHY,
         url: "https://www.indigocare.com/itrack-wireless-nurse-call",
       },
