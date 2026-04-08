@@ -5,7 +5,7 @@ const INDIGO_WHY =
 
 export const nl: Translations = {
   nav: {
-    who: "Wie",
+    who: "Over ons",
     ourWork: "Ons werk",
     ourProcess: "Ons proces",
     contact: "Contact",
