@@ -127,7 +127,7 @@ export const nl: Translations = {
         tags: ["zorg", "wearable", "waterdicht", "gereedschapvrije batterijwissel"],
         problem:
           "Drie draadloze technologieën moeten samenleven in één behuizing die klein genoeg is voor om de pols, robuust genoeg voor dagelijks gebruik in de zorg, en waterdicht. Bovendien moet de batterij verwisselbaar zijn zonder gereedschap of kleefmiddelen, en de behuizing moet waterdicht blijven na elke wissel.",
-        what: "Een compacte behuizing ontworpen die drie draadloze technologieën integreert. Een gereedschapvrij batterijwisselmechanisme ontwikkeld dat de waterdichte afdichting behoudt. Volledig mechanisch ontwerp, waterdichtheidsstrategie, comforttesting en productierijpe CAD.",
+        what: "Een compacte behuizing ontworpen met een gereedschapvrij batterijwisselmechanisme dat de waterdichte afdichting behoudt bij iedere wissel. Volledig mechanisch ontwerp, waterdichtheidsstrategie, comforttesting, waterdichtheidstesten met functionele prototypes en productierijpe CAD.",
         why: INDIGO_WHY,
         url: "https://www.indigocare.com/itrack-wireless-nurse-call",
       },
