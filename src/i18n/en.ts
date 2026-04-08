@@ -137,7 +137,7 @@ export const en: Translations = {
         name: "iCall 2",
         tags: ["healthcare", "modularity", "open-ended design", "upgradability"],
         problem:
-          "Healthcare equipment gets replaced, not repaired. How do you redesign an entire product range so field support can fix it on-site, with fewer parts, fewer materials, and housings shared across models. while keeping the platform open for future upgrades?",
+          "Healthcare equipment today is built into the wall. Every adjustment or repair means breaking open the wall -- costly, time-consuming, and the system goes down. The idea: the wall only holds a standardized docking point with power and data. The equipment itself is a separate box that clicks on and off. Need an upgrade? Click on a new box. Defect? Click on a replacement module, the broken box gets repaired elsewhere. The system keeps running, no tools, no contractor, no downtime.",
         what: "Redesigned the entire product range around modularity and upgradability. Shared housings across models, reduced part count, designed for on-site repair by support staff, and built in an open-ended architecture that accommodates future modules without redesign.",
         why: INDIGO_WHY,
         url: "https://www.indigocare.com/icall2",
