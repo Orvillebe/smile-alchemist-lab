@@ -137,7 +137,7 @@ export const nl: Translations = {
         name: "iCall 2",
         tags: ["zorg", "modulariteit", "open ontwerp", "upgradeerbaarheid"],
         problem:
-          "Zorgapparatuur zit vandaag ingebouwd in de muur. Elke aanpassing of reparatie betekent de muur openbreken -- kostbaar, tijdrovend, en het systeem ligt plat. Het idee: in de muur zit alleen een gestandaardiseerd dockingpunt met voeding en data. De apparatuur zelf is een los doosje dat je er op- en afklikt. Upgrade nodig? Nieuw doosje opklikken. Defect? Vervangmodule opklikken, kapotte doosje wordt elders hersteld. Het systeem blijft altijd draaien, zonder gereedschap, zonder aannemer, zonder stilstand.",
+          "Zorgapparatuur zit vandaag ingebouwd in de muur. Elke aanpassing of reparatie betekent de muur openbreken: kostbaar, tijdrovend, en het systeem ligt plat. Het idee: in de muur zit alleen een gestandaardiseerd dockingpunt met voeding en data. De apparatuur zelf is een los doosje dat je er op- en afklikt. Upgrade nodig? Nieuw doosje opklikken. Defect? Vervangmodule opklikken, kapotte doosje wordt elders hersteld. Het systeem blijft altijd draaien, zonder gereedschap, zonder aannemer, zonder stilstand.",
         what: "De volledige productreeks herontworpen rond modulariteit en upgradeerbaarheid. Gedeelde behuizingen over modellen heen, minder onderdelen, ontworpen voor reparatie ter plaatse door ondersteuningspersoneel, en een open architectuur die toekomstige modules opvangt zonder herontwerp.",
         why: INDIGO_WHY,
         url: "https://www.indigocare.com/icall2",
