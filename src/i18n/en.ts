@@ -148,7 +148,7 @@ export const en: Translations = {
         name: "Foote",
         tags: ["own product", "ergonomic", "bamboo", "portable"],
         problem:
-          "A portable monitor needs a stand. Every stand is a separate piece you forget, lose, or fumble with. Can the stand simply be part of the monitor, and be ergonomic enough for daily use?",
+          "A laptop promises freedom, but without an external screen and keyboard you hunch over and end up with neck and back pain. So you're tied to a desk anyway. A portable monitor helps, but only if setting up and packing away is so quick and easy that you actually do it everywhere. That turned out to be the deciding factor. On top of that, the product had to be suitable for small-scale production and local manufacturing.",
         what: "Full product development and go-to-market. From first sketch to shipping label. Mechanical design, ergonomic positioning, material selection (bamboo), hinge engineering, packaging, and production coordination.",
         why: "We wanted to prove we could take a product from concept to market. Not advise, do. From the first sketch to the shipping label.",
         url: "https://www.foote.be",

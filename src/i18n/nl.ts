@@ -148,7 +148,7 @@ export const nl: Translations = {
         name: "Foote",
         tags: ["eigen product", "ergonomisch", "bamboe", "draagbaar"],
         problem:
-          "Een draagbaar scherm heeft een standaard nodig. Elke standaard is een apart stuk dat je vergeet, verliest of mee worstelt. Kan de standaard gewoon deel uitmaken van het scherm, en ergonomisch genoeg zijn voor dagelijks gebruik?",
+          "Een laptop belooft vrijheid, maar zonder extern scherm en toetsenbord werk je krom en krijg je nek- en rugklachten. Dus hang je toch vast aan een bureau. Een draagbaar scherm helpt, maar alleen als het opzetten en opruimen zo snel en makkelijk is dat je het ook echt overal doet. Dat bleek de bepalende factor. Daarnaast moest het product geschikt zijn voor productie op kleine schaal en lokale maak.",
         what: "Volledige productontwikkeling en go-to-market. Van eerste schets tot verzendlabel. Mechanisch ontwerp, ergonomische positionering, materiaalkeuze (bamboe), scharniertechniek, verpakking en productiecoördinatie.",
         why: "We wilden bewijzen dat we een product van concept tot markt konden brengen. Niet adviseren, doen. Van de eerste schets tot het verzendlabel.",
         url: "https://www.foote.be",
